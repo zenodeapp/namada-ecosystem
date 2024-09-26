@@ -28,3 +28,4 @@ Please fill in the columns as follows:
 
 | Campfire Status | Housefire Status | Tool Name | URL             | Short Description                       | Team Name   | GitHub Account   | GitHub Repo     |
 |-----------------|------------------|-----------|-----------------|-----------------------------------------|-------------|------------------|-----------------|
+|n/a              |    🟢           |Public rpc  |https://roc.knowable.run| Public rpc for the housefire chain|Knowable| https://github.com/vknowable | n/a|
