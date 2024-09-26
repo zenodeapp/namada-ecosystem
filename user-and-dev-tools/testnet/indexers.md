@@ -4,19 +4,27 @@ available in our community.
 
 Please fill in the columns as follows:
 
-- **Status**: Use the following icons to indicate the tool's status:
-  - 🟢 for Live (functioning tool)
-  - 🔴 for Offline (temporarily not available)
-  - 🛠️ for Under Maintenance (tool is being updated)
-- **Tool Name**: The name of the tool.
-- **URL**: A direct link to the tool or its homepage.
-- **Short Description**: A brief description of the tool (max 60 chars).
-- **Team Name**: The name of the team or the individual responsible for the tool.
-- **GitHub Account**: The GitHub account of the main maintainer.
-- **GitHub Repo**: A link to the tool's GitHub repository.
+1. **Campfire Status**: Use the appropriate emoji:
+   - 🟢 : Live (the tool is functional and accessible)
+   - 🔴 : Offline (the tool is temporarily unavailable)
+   - 🛠️ : Under Maintenance (the tool is being updated or repaired)
 
-- To add a new row, just copy an existing line and replace the details, ensuring you keep the "|" character as a column separator.
+2. **Housefire Status**: Use the same emojis as above to indicate the current status of the tool for this specific env.
+
+3. **Tool Name**: The name of the tool.
+
+4. **URL**: A link to access the tool.
+
+5. **Short Description**: A brief description of the tool (max 50 chars).
+
+6. **Team Name**: The name of the team or the individual responsible for the tool.
+
+7. **GitHub Account**: The GitHub account of the maintainer.
+
+8. **GitHub Repo**: The link to the GitHub repository for the tool.
+
+**Note:** To add a new row, just copy an existing line and replace the details, ensuring you keep the "|" character as a column separator.
 -->
 
-| Status | Tool Name | URL                      | Short Description                   | Team Name | GitHub Account         | GitHub Repo                |
-|--------|-----------|--------------------------|-------------------------------------|-----------|------------------------|-----------------------------|
+| Campfire Status | Housefire Status | Tool Name | URL             | Short Description                       | Team Name   | GitHub Account   | GitHub Repo     |
+|-----------------|------------------|-----------|-----------------|-----------------------------------------|-------------|------------------|-----------------|
