@@ -28,4 +28,4 @@ Please fill in the columns as follows:
 
 | Campfire Status | Housefire Status | Tool Name | URL             | Short Description                       | Team Name   | GitHub Account   | GitHub Repo     |
 |-----------------|------------------|-----------|-----------------|-----------------------------------------|-------------|------------------|-----------------|
-🟢|🟢|ZENODE Explorer|https://zenode.app/explorer/namada|Monitor network health, endpoints, blocks and IBC transfers.|ZEN|zenodeapp|N/A
+🟢|🟢|ZENODE Explorer|https://zenode.app/explorer/namada|Monitor network health, endpoints, blocks and IBC transfers.|anodeofzen (ZEN)|zenodeapp|N/A
