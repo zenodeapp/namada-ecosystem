@@ -28,3 +28,5 @@ Please fill in the columns as follows:
 
 | Campfire Status | Housefire Status | Tool Name | URL             | Short Description                       | Team Name   | GitHub Account   | GitHub Repo     |
 |-----------------|------------------|-----------|-----------------|-----------------------------------------|-------------|------------------|-----------------|
+|n/a              |    🟢           |namada-indexer|https://indexer.knowable.run| `namada-indexer` for the housefire chain... see https://github.com/anoma/namada-indexer/blob/main/swagger.yml |Knowable| https://github.com/vknowable | https://github.com/anoma/namada-indexer|
+|n/a              |    🟢           |masp-indexer|https://masp.knowable.run| `masp-indexer` for the housefire chain... see https://github.com/anoma/namada-masp-indexer/blob/master/swagger.yml |Knowable| https://github.com/vknowable | https://github.com/anoma/namada-masp-indexer|
