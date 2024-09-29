@@ -28,3 +28,5 @@ Please fill in the columns as follows:
 
 | Campfire Status | Housefire Status | Tool Name | URL             | Short Description                       | Team Name   | GitHub Account   | GitHub Repo     |
 |-----------------|------------------|-----------|-----------------|-----------------------------------------|-------------|------------------|-----------------|
+🟢|🔴|anodeofzen Campfire RPC|https://namada-campfire-rpc.zenode.app|tududes-draft.f30110b2dd02eb7d|anodeofzen (ZEN)|zenodeapp|-|
+🔴|🟢|anodeofzen Housefire RPC|https://namada-housefire-rpc.zenode.app|housefire-head.a03c8e8948ed20b|anodeofzen (ZEN)|zenodeapp|-|
