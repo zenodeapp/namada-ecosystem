@@ -29,4 +29,4 @@ Please fill in the columns as follows:
 | Campfire Status | Housefire Status | Tool Name | URL             | Short Description                       | Team Name   | GitHub Account   | GitHub Repo     |
 |-----------------|------------------|-----------|-----------------|-----------------------------------------|-------------|------------------|-----------------|
 🟢|🟢|ZENODE Explorer|https://zenode.app/explorer/namada|Monitor network health, endpoints, blocks and IBC transfers.|anodeofzen (ZEN)|zenodeapp|N/A|
-🟢|🟢|Shielded Live Explorer|https://shielded.live/|View real-time data on blockchain status, transactions, block details, addresses, validators, governance proposals, network parameters, etc.|Mandragora|https://github.com/McDaan|N/A|
+🟢|🟢|Shielded Live Explorer|https://shielded.live/|Real-time data about network, txs, blocks, validators, gov, params, etc.|Mandragora|https://github.com/McDaan|N/A|
