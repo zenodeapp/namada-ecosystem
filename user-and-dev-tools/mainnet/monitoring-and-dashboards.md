@@ -28,3 +28,6 @@ Please fill in the columns as follows:
 
 | Status | Tool Name | Category | Short Description | Team Name | GitHub Account | GitHub Repo | Additional Note |
 |--------|-----------|----------|-------------------|-----------|----------------|-------------|-----------------|
+| 🟢 | Namada exporter | Monitoring | Prometheus exporter & Dashboard to monitor Namada validator | MELLIFERA | RuslanGlaznyov, evgenykhlivetsky | [github.com/mellifera-labs/namada-exporter](https://github.com/mellifera-labs/namada-exporter) | _ |
+
+
