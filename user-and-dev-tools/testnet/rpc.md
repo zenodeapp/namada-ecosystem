@@ -32,3 +32,4 @@ Please fill in the columns as follows:
 🟢|🔴|anodeofzen Campfire RPC|https://namada-campfire-rpc.zenode.app |tududes-draft.f30110b2dd02eb7d|anodeofzen (ZEN)|https://github.com/zenodeapp |-|
 🔴|🟢|anodeofzen Housefire RPC|https://namada-housefire-rpc.zenode.app |housefire-head.a03c8e8948ed20b|anodeofzen (ZEN)|https://github.com/zenodeapp |-|
 🔴|🟢|Mandragora Housefire RPC|https://namada-rpc-housefire.mandragora.io|Public RPC w/ tx indexing & state-sync snapshots enabled|Mandragora|https://github.com/McDaan |-|
+🔴|🟢|Moonlet Housefire RPC|https://namada-rpc.testnet.moonlet.cloud/public|Public RPC for the housefire testnet|Moonlet|https://github.com/Moonlet |-|
