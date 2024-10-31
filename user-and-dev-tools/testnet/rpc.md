@@ -34,3 +34,4 @@ Please fill in the columns as follows:
 🔴|🟢|Mandragora Housefire RPC|https://namada-rpc-housefire.mandragora.io|Public RPC w/ tx indexing & state-sync snapshots enabled|Mandragora|https://github.com/McDaan |-|
 🔴|🟢|Moonlet Housefire RPC|https://namada-rpc.testnet.moonlet.cloud/public|Public RPC for the housefire testnet|Moonlet|https://github.com/Moonlet |-|
 🔴|🟢|Sproutstake Housefire RPC|https://namada-rpc.sproutstake.space/|Public RPC for the housefire testnet|Sproutstake|https://github.com/TonyStarkMan2 |-|
+🔴|🟢|Usamamk Housefire RPC|https://rpc.usamamk-namadaspace.space/|Public RPC for the housefire testnet|usamamk|https://github.com/Usamahmk |-|
