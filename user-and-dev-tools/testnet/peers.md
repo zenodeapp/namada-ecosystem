@@ -21,3 +21,4 @@ Please fill in the columns as follows:
 | Campfire Status | Housefire Status | Team or Provider Name | Peer Address             | 
 |-----------------|------------------|-----------|-----------------|
 |🔴|🟢|Mandragora|`tcp://9d588134a3bc1967315b27930ca95846f4373aab@namada-peer-housefire.mandragora.io:26656`|
+|🟢|🔴|kjnodes|`tcp://0744b560781754e902acfad362546819f998ba6b@namada-testnet.rpc.kjnodes.com:26756`|

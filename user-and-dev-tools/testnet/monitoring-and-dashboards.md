@@ -29,3 +29,4 @@ Please fill in the columns as follows:
 | Status | Tool Name | Category | Short Description | Team Name | GitHub Account | GitHub Repo | Additional Note |
 |--------|-----------|----------|-------------------|-----------|----------------|-------------|-----------------|
 | 🟢 | Namada exporter | Monitoring | Prometheus exporter & Dashboard to monitor Namada validator | MELLIFERA | RuslanGlaznyov, evgenykhlivetsky |[github.com/mellifera-labs/namada-exporter](https://github.com/mellifera-labs/namada-exporter) | _ |
+| 🟢 | Namada Node Dashboard | Monitoring/Alerting | All-in-one Namada node monitoring stack with Dashboard and Telegram alerts | kjnodes | kjnodes |[https://github.com/kjnodes/namada-node-monitoring](https://github.com/kjnodes/namada-node-monitoring) | _ |

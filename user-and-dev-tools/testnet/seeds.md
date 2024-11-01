@@ -21,3 +21,4 @@ Please fill in the columns as follows:
 | Campfire Status | Housefire Status | Team or Provider Name | Seed Address             | 
 |-----------------|------------------|-----------|-----------------|
 |🔴|🟢|Mandragora|`tcp://7fe3cd644be4ea649f2e00273585d4117daa138c@namada-seed-housefire.mandragora.io:21656`|
+|🟢|🔴|kjnodes|`tcp://0744b560781754e902acfad362546819f998ba6b@namada-testnet.rpc.kjnodes.com:26759`|
