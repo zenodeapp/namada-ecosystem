@@ -23,3 +23,4 @@ Please fill in the columns as follows:
 | Campfire Status | Housefire Status | Team or Provider Name | Snapshot Link | Update frequency |
 |-----------------|------------------|-----------------------|---------------|------------------|
 |🔴|🟢|Mandragora|https://hackmd.io/@bMLJfk-wRcus0zQNBavDTQ/HJag71c0R#Apply-Mandragora-snapshots-dbdata|4h (full snapshot)|
+|🟢|🔴|kjnodes|https://services.kjnodes.com/testnet/namada/snapshot|6h (full snapshot)|
