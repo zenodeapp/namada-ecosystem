@@ -29,3 +29,4 @@ Please fill in the columns as follows:
 | Campfire Status | Housefire Status | Tool Name | Short Description | Team Name | GitHub Account | GitHub Repo | Additional Note |
 |-----------------|------------------|-----------|-------------------|-----------|----------------|-------------|-----------------|
 |N/A|N/A| Namada Self-Host |Quickly deploy two local Namada blockchain nodes and Hermes (for IBC transactions) with Docker containers|EmberStake|https://github.com/0x4r45h|https://github.com/EmberStake/namada-selfhost|N/A|
+|N/A|N/A| Namada Up!       | Easiest way to Run a Namada Node/Validator with out-of-box Grafana dashboards using Docker compose        |EmberStake|https://github.com/0x4r45h| https://github.com/EmberStake/namada-up       |N/A|
