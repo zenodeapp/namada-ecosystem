@@ -26,3 +26,4 @@ Please fill in the columns as follows:
 
 | Status | Tool Name | Short Description | Team Name | GitHub Account | GitHub Repo | Additional Note |
 |--------|-----------|-------------------|-----------|----------------|-------------|-----------------|
+|🟢| Namada Up! | Easiest way to Run a Namada Node/Validator with out-of-box Grafana dashboards using Docker compose |EmberStake|https://github.com/0x4r45h| https://github.com/EmberStake/namada-up       | Production Ready |
