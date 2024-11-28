@@ -22,3 +22,4 @@ Please fill in the columns as follows:
 |-----------------|------------------|-----------|-----------------|
 |🔴|🟢|Mandragora|`tcp://7fe3cd644be4ea649f2e00273585d4117daa138c@namada-seed-housefire.mandragora.io:21656`|
 |🟢|🔴|kjnodes|`tcp://0744b560781754e902acfad362546819f998ba6b@namada-testnet.rpc.kjnodes.com:26759`|
+|🔴|🟢|Citizen Web3|`tcp://fb6f004f247913b248e71f405f11f2e1c785ce08@@testnet.seednode:31656`|
