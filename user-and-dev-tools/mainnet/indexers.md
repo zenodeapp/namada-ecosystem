@@ -20,3 +20,5 @@ Please fill in the columns as follows:
 
 | Status | Tool Name | URL                      | Short Description                   | Team Name | GitHub Account         | GitHub Repo                |
 |--------|-----------|--------------------------|-------------------------------------|-----------|------------------------|-----------------------------|
+|🟢| Namada-Indexer |https://namada-idx.emberstake.xyz/| `namada-indexer` - see https://github.com/anoma/namada-indexer/blob/main/swagger.yml      | EmberStake |https://github.com/EmberStake|https://github.com/anoma/namada-indexer|
+|🟢| Masp-Indexer   |https://namada-masp-idx.emberstake.xyz/| `masp-indexer` - see https://github.com/anoma/namada-masp-indexer/blob/master/swagger.yml | EmberStake |https://github.com/EmberStake|https://github.com/anoma/namada-masp-indexer|
