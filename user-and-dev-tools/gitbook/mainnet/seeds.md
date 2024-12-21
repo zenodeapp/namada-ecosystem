@@ -18,12 +18,6 @@
 - **GitHub Account**: N/A
 
 ---
-- **Seed Node Address**: tcp://eaa6bda69dc3281186b5f150c21e62e6e4325d34@152.53.104.210:26656
-- **Team or Contributor Name**: N/A
-- **Discord UserName**: N/A
-- **GitHub Account**: N/A
-
----
 - **Seed Node Address**: tcp://04affb50117ef548cbf7d1ddb1e6416dec0645ae@namada-mainnet-seed.itrocket.net:14656
 - **Team or Contributor Name**: N/A
 - **Discord UserName**: N/A
@@ -82,4 +76,10 @@
 - **Team or Contributor Name**: Grand Valley
 - **Discord UserName**: baconvalley
 - **GitHub Account**: hubofvalley
+
+---
+- **Seed Node Address**: tcp://eaa6bda69dc3281186b5f150c21e62e6e4325d34@152.53.104.210:26656
+- **Team or Contributor Name**: Validatus
+- **Discord UserName**: validatus.com
+- **GitHub Account**: https://github.com/Validatus-com/
 

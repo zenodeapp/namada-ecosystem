@@ -62,3 +62,10 @@
 - **Discord UserName**: jango_l0vd
 - **GitHub Account**: https://github.com/L0vd
 
+---
+- **Snapshot Link**: https://quicksync.validatus.com/snapshots
+- **Update Frequency**: 1h
+- **Team or Contributor Name**: Validatus
+- **Discord UserName**: validatus.com
+- **GitHub Account**: https://github.com/Validatus-com/
+
