@@ -42,7 +42,7 @@
 - **Team or Contributor Name**: Grand Valley
 - **Discord UserName**: baconvalley
 - **GitHub Account**: https://github.com/hubofvalley
-- **Additional Note**: Simple command to run VoN: bash <(curl -s https://raw.githubusercontent.com/hubofvalley/Mainnet-Guides/main/Namada/resources/valleyofNamada.sh). Inside VoN there's a special tool also that can help user to understand and estimate how the Cubic Slashing works, the tool is called Cubic Slashing Rate (CSR) Monitoring Tool. Guidance and details: https://github.com/hubofvalley/Mainnet-Guides/blob/main/Namada/README.md#valley-of-namada-namada-tools-created-by-grand-valley
+- **Additional Note**: Simple command to run VoN: bash <(curl -s https://raw.githubusercontent.com/hubofvalley/Mainnet-Guides/main/Namada/resources/valleyofNamada.sh). Guidance and details: https://github.com/hubofvalley/Mainnet-Guides/blob/main/Namada/README.md#valley-of-namada-namada-tools-created-by-grand-valley
 
 ---
 - **Tool Name**: CometPrune
