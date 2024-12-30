@@ -23,3 +23,9 @@
 - **Discord UserName**: oneplus
 - **GitHub Account**: N/A
 
+---
+- **Indexer API URL**: https://masp-indexer.namada-housefire.citizenweb3.com/
+- **Team or Contributor Name**: Citizen Web3
+- **Discord UserName**: alibabaedge, serejandmyself_citizenweb3
+- **GitHub Account**: https://github.com/citizenweb3
+
