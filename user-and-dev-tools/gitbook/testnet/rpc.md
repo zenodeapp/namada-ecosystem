@@ -24,8 +24,13 @@
 - **GitHub Account**: N/A
 
 ---
+- **RPC Address**: https://rpc.namada-housefire.citizenweb3.com
+- **Team or Contributor Name**: Citizen Web3
+- **Discord UserName**: alibabaedge, serejandmyself_citizenweb3
+- **GitHub Account**: https://github.com/citizenweb3
+
+---
 - **RPC Address**: https://namada-housefire-rpc.denodes.xyz
 - **Team or Contributor Name**: deNodes
 - **Discord UserName**: bombermine
 - **GitHub Account**: denodesxyz
-
