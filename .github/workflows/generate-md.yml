@@ -16,6 +16,7 @@ permissions:
 
 jobs:
   generate-md:
+    if: ${{ github.repository == 'Luminara-Hub/namada-ecosystem' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
