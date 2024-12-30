@@ -160,3 +160,10 @@
 - **Discord UserName**: lyeoeon
 - **GitHub Account**: https://github.com/lyeoeon1
 
+---
+- **Which Indexer**: namada-indexer
+- **Indexer API URL**: https://api-namada-mainnet-indexer.tm.p2p.org
+- **Team or Contributor Name**: P2P.org
+- **Discord UserName**: fedorly
+- **GitHub Account**: felichita
+

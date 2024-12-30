@@ -239,3 +239,9 @@
 - **Discord UserName**: lyeoeon
 - **GitHub Account**: https://github.com/lyeoeon1
 
+---
+- **RPC Address**: https://namada-archive.tm.p2p.org
+- **Team or Contributor Name**: P2P.org
+- **Discord UserName**: fedorly
+- **GitHub Account**: felichita
+

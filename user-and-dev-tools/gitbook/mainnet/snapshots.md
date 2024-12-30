@@ -69,3 +69,10 @@
 - **Discord UserName**: validatus.com
 - **GitHub Account**: https://github.com/Validatus-com/
 
+---
+- **Snapshot Link**: https://namada-mainnet-archive-snapshots.tm.p2p.org
+- **Update Frequency**: 12h
+- **Team or Contributor Name**: P2P.org
+- **Discord UserName**: fedorly
+- **GitHub Account**: felichita
+
