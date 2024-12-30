@@ -29,3 +29,8 @@
 - **Discord UserName**: alibabaedge, serejandmyself_citizenweb3
 - **GitHub Account**: https://github.com/citizenweb3
 
+---
+- **Indexer API URL**: https://namada-housefire-masp-indexer.denodes.xyz
+- **Team or Contributor Name**: deNodes
+- **Discord UserName**: bombermine
+- **GitHub Account**: denodesxyz
