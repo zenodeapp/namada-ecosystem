@@ -23,3 +23,9 @@
 - **Discord UserName**: Oneplus
 - **GitHub Account**: N/A
 
+---
+- **RPC Address**: https://rpc.namada-housefire.citizenweb3.com
+- **Team or Contributor Name**: Citizen Web3
+- **Discord UserName**: alibabaedge, serejandmyself_citizenweb3
+- **GitHub Account**: https://github.com/citizenweb3
+
