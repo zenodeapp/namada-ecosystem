@@ -11,3 +11,9 @@
 - **Discord UserName**: mrspir
 - **GitHub Account**: mrspir
 
+---
+- **Seed Node Address**: tcp://1dae6535bf5e4663ccb7c7294c129221b6018d22@168.119.37.164:26656
+- **Team or Contributor Name**: Citizen Web3
+- **Discord UserName**: alibabaedge, serejandmyself_citizenweb3
+- **GitHub Account**: https://github.com/citizenweb3
+
