@@ -1,10 +1,10 @@
 # Monitoring-And-Dashboards
 
-- **Tool Name**: N/A
-- **Category**: N/A
-- **Short Description**: N/A
-- **Team or Contributor Name**: N/A
-- **Github Repo**: N/A
-- **Discord UserName**: N/A
-- **GitHub Account**: N/A
+- **Tool Name**: Node Monitoring Script
+- **Category**: Monitoring
+- **Short Description**: Tracks validator status: missed blocks, voting power, and sends alerts.
+- **Team or Contributor Name**: itrocket
+- **Github Repo**: https://github.com/itrocket-team/testnet_guides/tree/main/namada/monitoring
+- **Discord UserName**: itrocket
+- **GitHub Account**: itrocket-team
 

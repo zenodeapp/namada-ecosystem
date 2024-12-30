@@ -125,3 +125,9 @@
 - **Discord UserName**: lyeoeon
 - **GitHub Account**: https://github.com/lyeoeon1
 
+---
+- **Indexer API URL**: https://namada-mainnet-masp.itrocket.net
+- **Team or Contributor Name**: itrocket
+- **Discord UserName**: itrocket
+- **GitHub Account**: itrocket-team
+

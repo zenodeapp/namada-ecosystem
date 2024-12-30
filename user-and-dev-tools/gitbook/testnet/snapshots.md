@@ -1,8 +1,8 @@
 # Snapshots
 
-- **Snapshot Link**: N/A
-- **Update Frequency**: N/A
-- **Team or Contributor Name**: N/A
-- **Discord UserName**: N/A
-- **GitHub Account**: N/A
+- **Snapshot Link**: https://itrocket.net/services/testnet/namada/#snap
+- **Update Frequency**: every 4h
+- **Team or Contributor Name**: itrocket
+- **Discord UserName**: itrocket
+- **GitHub Account**: itrocket-team
 

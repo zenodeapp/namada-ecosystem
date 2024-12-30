@@ -53,3 +53,12 @@
 - **GitHub Account**: https://github.com/ekhvalov
 - **Additional Note**: N/A
 
+---
+- **Tool Name**: Public RPC Scanner
+- **Short Description**: RPC scanner with archival checker and raw data output for detailed endpoint analysis.
+- **Tool URL**: https://itrocket.net/services/mainnet/namada/public-rpc/
+- **Team or Contributor Name**: itrocket
+- **Discord UserName**: itrocket
+- **GitHub Account**: itrocket-team
+- **Additional Note**: RPCs with performance issues are not shown. Nodes without genesis indexing aren't marked as archival.
+

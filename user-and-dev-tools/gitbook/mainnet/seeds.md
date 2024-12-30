@@ -83,3 +83,9 @@
 - **Discord UserName**: validatus.com
 - **GitHub Account**: https://github.com/Validatus-com/
 
+---
+- **Seed Node Address**: tcp://04affb50117ef548cbf7d1ddb1e6416dec0645ae@namada-mainnet-seed.itrocket.net:14656
+- **Team or Contributor Name**: itrocket
+- **Discord UserName**: itrocket
+- **GitHub Account**: itrocket-team
+

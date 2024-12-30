@@ -162,6 +162,13 @@
 
 ---
 - **Which Indexer**: namada-indexer
+- **Indexer API URL**: https://namada-mainnet-indexer.itrocket.net
+- **Team or Contributor Name**: itrocket
+- **Discord UserName**: itrocket
+- **GitHub Account**: itrocket-team
+
+---
+- **Which Indexer**: namada-indexer
 - **Indexer API URL**: https://api-namada-mainnet-indexer.tm.p2p.org
 - **Team or Contributor Name**: P2P.org
 - **Discord UserName**: fedorly

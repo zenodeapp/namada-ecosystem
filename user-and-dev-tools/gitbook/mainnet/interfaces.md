@@ -159,3 +159,11 @@
 - **Discord UserName**: lyeoeon
 - **GitHub Account**: https://github.com/lyeoeon1
 
+---
+- **Interface Name (Namadillo or Custom)**: Namadillo
+- **Interface URL**: https://namadillo.itrocket.net/
+- **Notes**: N/A
+- **Team or Contributor Name**: itrocket
+- **Discord UserName**: itrocket
+- **GitHub Account**: itrocket-team
+

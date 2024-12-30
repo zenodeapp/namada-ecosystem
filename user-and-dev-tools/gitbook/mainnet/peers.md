@@ -233,3 +233,9 @@
 - **Discord UserName**: lyeoeon
 - **GitHub Account**: https://github.com/lyeoeon1
 
+---
+- **Peer Address**: tcp://805ba1297ee4e4d64e2d5ec17423365b0489dafb@namada-mainnet-peer.itrocket.net:14656
+- **Team or Contributor Name**: itrocket
+- **Discord UserName**: itrocket
+- **GitHub Account**: itrocket-team
+

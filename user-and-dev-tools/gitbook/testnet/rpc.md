@@ -24,6 +24,12 @@
 - **GitHub Account**: N/A
 
 ---
+- **RPC Address**: https://namada-testnet-rpc.itrocket.net
+- **Team or Contributor Name**: itrocket
+- **Discord UserName**: itrocket
+- **GitHub Account**: itrocket-team
+
+---
 - **RPC Address**: https://rpc.namada-housefire.citizenweb3.com
 - **Team or Contributor Name**: Citizen Web3
 - **Discord UserName**: alibabaedge, serejandmyself_citizenweb3
