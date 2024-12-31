@@ -1,3 +1,4 @@
+![luminara logo](./luminara.jpeg)
 # Namada Ecosystem -- Community Run Resources
 
 This repo contains a directory of community run Namada resources -- rpcs, indexers, interfaces, monitoring tools, and more!

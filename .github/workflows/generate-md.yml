@@ -31,7 +31,7 @@ jobs:
       #   run: pip install --no-cache-dir -r requirements.txt
 
       - name: Run Markdown generation script
-        run: python scripts/gen-tools-md.py
+        run: python _luminara-homebase/scripts/gen-tools-md.py
 
       - name: Commit generated Markdown files
         run: |
