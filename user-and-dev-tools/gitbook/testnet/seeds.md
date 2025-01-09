@@ -23,3 +23,9 @@
 - **Discord UserName**: alibabaedge, serejandmyself_citizenweb3
 - **GitHub Account**: https://github.com/citizenweb3
 
+---
+- **Seed Node Address**: tcp://c7dcabd4ea55c3f00a8dddaae04c71cfe620b709@p2p-testnet.namada.newton.zone:36656
+- **Team or Contributor Name**: newton.zone
+- **Discord UserName**: 0xb0b
+- **GitHub Account**: https://github.com/ekhvalov
+
