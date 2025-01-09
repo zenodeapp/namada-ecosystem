@@ -160,7 +160,7 @@
 - **GitHub Account**: itrocket-team
 
 ---
-- **Interface Name**: Cubic Slashing Rate Simulation
+- **Interface Name (Namadillo or Custom)**: Cubic Slashing Rate Simulation
 - **Interface URL**: https://csr-simulation-tool.grandvalleys.com/
 - **Notes**: N/A
 - **Team or Contributor Name**: Grand Valley
