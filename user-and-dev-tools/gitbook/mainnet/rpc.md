@@ -251,3 +251,9 @@
 - **Discord UserName**: fedorly
 - **GitHub Account**: felichita
 
+---
+- **RPC Address**: https://namada-rpc.ibs.team
+- **Team or Contributor Name**: Inter Blockchain Services
+- **Discord UserName**: remiinterblockchainservices
+- **GitHub Account**: Inter-Blockchain-Service
+
