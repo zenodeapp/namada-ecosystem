@@ -57,7 +57,7 @@
 - **RPC Address**: https://rpc.papadritta.com/
 - **Team or Contributor Name**: Papadritta
 - **Discord UserName**: papadritta
-- **GitHub Account**: N/A
+- **GitHub Account**: https://github.com/papadritta
 
 ---
 - **RPC Address**: https://namada.rpc.decentrio.ventures
