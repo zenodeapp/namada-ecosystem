@@ -96,10 +96,10 @@
 - **GitHub Account**: N/A
 
 ---
-- **RPC Address**: https://namada.itudou.xyz/
-- **Team or Contributor Name**: jacky1988
+- **RPC Address**: https://namada-mainnet-rpc.itudou.xyz/
+- **Team or Contributor Name**: itudou
 - **Discord UserName**: jacky1998
-- **GitHub Account**: N/A
+- **GitHub Account**: JackyGao1998
 
 ---
 - **RPC Address**: https://rpc.namada.validatus.com/
