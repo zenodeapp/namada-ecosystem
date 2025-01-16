@@ -34,3 +34,10 @@
 - **Team or Contributor Name**: Nodes.Guru
 - **GitHub Account**: https://github.com/nodesguru
 
+---
+- **Explorer Name**: Namada Explorer
+- **URL**: https://namada.coverlet.io/
+- **Short Description**: N/A
+- **Team or Contributor Name**: Coverlet
+- **GitHub Account**: https://github.com/coverlet
+

@@ -41,3 +41,10 @@
 - **Discord UserName**: bombermine
 - **GitHub Account**: denodesxyz
 
+---
+- **Which Indexer**: namada-indexer
+- **Indexer API URL**: indexer.testnet.namada.coverlet.io
+- **Team or Contributor Name**: Coverlet
+- **Discord UserName**: leongameon
+- **GitHub Account**: coverlet
+

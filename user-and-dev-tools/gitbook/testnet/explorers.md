@@ -13,3 +13,10 @@
 - **Team or Contributor Name**: pro-nodes75
 - **GitHub Account**: https://github.com/the-node75
 
+---
+- **Explorer Name**: Namada Explorer
+- **URL**: https://testnet.namada.coverlet.io/
+- **Short Description**: N/A
+- **Team or Contributor Name**: Coverlet
+- **GitHub Account**: https://github.com/coverlet
+

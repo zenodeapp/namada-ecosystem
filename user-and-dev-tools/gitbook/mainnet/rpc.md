@@ -257,3 +257,9 @@
 - **Discord UserName**: remiinterblockchainservices
 - **GitHub Account**: Inter-Blockchain-Service
 
+---
+- **RPC Address**: https://rpc.namada.coverlet.io/
+- **Team or Contributor Name**: Coverlet
+- **Discord UserName**: leongameon
+- **GitHub Account**: coverlet
+

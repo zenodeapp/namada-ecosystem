@@ -41,3 +41,9 @@
 - **Discord UserName**: bombermine
 - **GitHub Account**: denodesxyz
 
+---
+- **RPC Address**: https://rpc.testnet.namada.coverlet.io/
+- **Team or Contributor Name**: Coverlet
+- **Discord UserName**: leongameon
+- **GitHub Account**: coverlet
+
