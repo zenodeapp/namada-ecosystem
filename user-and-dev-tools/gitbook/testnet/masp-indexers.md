@@ -35,3 +35,9 @@
 - **Discord UserName**: bombermine
 - **GitHub Account**: denodesxyz
 
+---
+- **Indexer API URL**: https://housefire-masp.max-03.xyz
+- **Team or Contributor Name**: max-03
+- **Discord UserName**: power542
+- **GitHub Account**: maxpower-01
+
