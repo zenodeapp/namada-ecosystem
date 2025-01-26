@@ -29,3 +29,9 @@
 - **Discord UserName**: bombermine
 - **GitHub Account**: denodesxyz
 
+---
+- **Peer Address**: tcp://7e2069e6bf93a23b611ec9551d1a9427603f5792@88.99.67.38:26656
+- **Team or Contributor Name**: max-03
+- **Discord UserName**: power542
+- **GitHub Account**: maxpower-01
+
