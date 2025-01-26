@@ -39,3 +39,11 @@
 - **Discord UserName**: bombermine
 - **GitHub Account**: denodesxyz
 
+---
+- **Interface Name (Namadillo or Custom)**: Namadillo
+- **Interface URL**: https://housefire-namadillo.max-03.xyz
+- **Notes**: N/A
+- **Team or Contributor Name**: max-03
+- **Discord UserName**: power542
+- **GitHub Account**: maxpower-01
+
