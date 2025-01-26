@@ -47,3 +47,9 @@
 - **Discord UserName**: leongameon
 - **GitHub Account**: coverlet
 
+---
+- **RPC Address**: https://housefire-rpc.max-03.xyz
+- **Team or Contributor Name**: max-03
+- **Discord UserName**: power542
+- **GitHub Account**: maxpower-01
+
