@@ -1,0 +1,45 @@
+[
+  {
+    "chains": [
+      {
+        "chain_id": "housefire-alpaca.cc0d3e0c033be",
+        "client_id": "07-tendermint-0",
+        "connection_id": "connection-0",
+        "channel_id": "channel-0",
+        "port_id": "transfer",
+        "supported_tokens": [
+          {
+            "denom": "tnam1q9gr66cvu4hrzm0sd5kmlnjje82gs3xlfg3v6nu7",
+            "symbol": "NAM",
+            "decimals": 6
+          }
+        ]
+      },
+      {
+        "chain_id": "osmosis-1",
+        "client_id": "07-tendermint-3408",
+        "connection_id": "connection-10229",
+        "channel_id": "channel-97083",
+        "port_id": "transfer",
+        "supported_tokens": [
+          {
+            "denom": "uosmo",
+            "symbol": "OSMO",
+            "decimals": 6
+          }
+        ]
+      }
+    ],
+    "relayers": [
+      {
+        "team_or_contributor_name": "",
+        "discord_username": "",
+        "github_account": "",
+        "relayer_wallet_address": {
+          "housefire": "",
+          "osmosis-1": ""
+        }
+      }
+    ]
+  }
+]
