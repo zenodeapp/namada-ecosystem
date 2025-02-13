@@ -174,3 +174,10 @@
 - **Discord UserName**: fedorly
 - **GitHub Account**: felichita
 
+---
+- **Which Indexer**: namada-indexer
+- **Indexer API URL**: https://indexer.namada.coverlet.io/
+- **Team or Contributor Name**: Coverlet
+- **Discord UserName**: leongameon
+- **GitHub Account**: coverlet
+

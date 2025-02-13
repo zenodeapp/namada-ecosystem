@@ -1,11 +1,5 @@
 # Masp-Indexers
 
-- **Indexer API URL**: https://namada-masp.max-02.xyz
-- **Team or Contributor Name**: max-02
-- **Discord UserName**: power542
-- **GitHub Account**: N/A
-
----
 - **Indexer API URL**: https://masp-namada.5elementsnodes.com/
 - **Team or Contributor Name**: 5ElementsNodes
 - **Discord UserName**: h3ll0_friend

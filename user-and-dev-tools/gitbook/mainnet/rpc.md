@@ -129,7 +129,7 @@
 - **RPC Address**: https://namada-rpc.max-02.xyz
 - **Team or Contributor Name**: max-02
 - **Discord UserName**: power542
-- **GitHub Account**: N/A
+- **GitHub Account**: maxpower-01
 
 ---
 - **RPC Address**: https://namada-mainnet-rpc.denodes.xyz
@@ -256,4 +256,10 @@
 - **Team or Contributor Name**: Inter Blockchain Services
 - **Discord UserName**: remiinterblockchainservices
 - **GitHub Account**: Inter-Blockchain-Service
+
+---
+- **RPC Address**: https://rpc.namada.coverlet.io/
+- **Team or Contributor Name**: Coverlet
+- **Discord UserName**: leongameon
+- **GitHub Account**: coverlet
 
