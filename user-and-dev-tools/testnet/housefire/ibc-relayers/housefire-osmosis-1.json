@@ -3,9 +3,9 @@
     "chains": [
       {
         "chain_id": "housefire-alpaca.cc0d3e0c033be",
-        "client_id": "07-tendermint-0",
-        "connection_id": "connection-0",
-        "channel_id": "channel-0",
+        "client_id": "07-tendermint-15",
+        "connection_id": "connection-8",
+        "channel_id": "channel-7",
         "port_id": "transfer",
         "supported_tokens": [
           {
@@ -17,9 +17,9 @@
       },
       {
         "chain_id": "osmosis-1",
-        "client_id": "07-tendermint-3408",
-        "connection_id": "connection-10229",
-        "channel_id": "channel-97083",
+        "client_id": "07-tendermint-3426",
+        "connection_id": "connection-10586",
+        "channel_id": "channel-98130",
         "port_id": "transfer",
         "supported_tokens": [
           {
@@ -38,6 +38,15 @@
         "relayer_wallet_address": {
           "housefire": "tnam1qqec0hwnhqss75ngqgh4jrjxwgzxq6c8u5sr03mg",
           "osmosis-1": "osmo1gde9xqg88zgcusngqf0fnvstvtkz3fmqqc207f"
+        }
+      },
+      {
+        "team_or_contributor_name": "max-03",
+        "discord_username": "power542",
+        "github_account": "maxpower-01",
+        "relayer_wallet_address": {
+          "housefire": "tnam1qzff7crvt7zenlw07w5q0a7hm05ymsg5tqzn8ttc",
+          "osmosis-1": "osmo1kn462kf9y7pre5lu84zc7ayfdy490lajj02l0t"
         }
       }
     ]

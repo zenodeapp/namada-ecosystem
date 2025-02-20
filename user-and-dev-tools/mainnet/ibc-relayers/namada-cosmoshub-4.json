@@ -2,10 +2,10 @@
   {
     "chains": [
       {
-        "chain_id": "housefire-alpaca.cc0d3e0c033be",
-        "client_id": "07-tendermint-17",
-        "connection_id": "connection-10",
-        "channel_id": "channel-9",
+        "chain_id": "namada.5f5de2dd1b88cba30586420",
+        "client_id": "07-tendermint-3",
+        "connection_id": "connection-2",
+        "channel_id": "channel-2",
         "port_id": "transfer",
         "supported_tokens": [
           {
@@ -17,9 +17,9 @@
       },
       {
         "chain_id": "cosmoshub-4",
-        "client_id": "07-tendermint-1349",
-        "connection_id": "connection-1087",
-        "channel_id": "channel-1315",
+        "client_id": "07-tendermint-1351",
+        "connection_id": "connection-1089",
+        "channel_id": "channel-1317",
         "port_id": "transfer",
         "supported_tokens": [
           {
@@ -37,7 +37,7 @@
         "github_account": "maxpower-01",
         "relayer_wallet_address": {
           "housefire": "tnam1qzff7crvt7zenlw07w5q0a7hm05ymsg5tqzn8ttc",
-          "cosmoshub-4": "cosmos1kn462kf9y7pre5lu84zc7ayfdy490laj65e0ee"
+          "cosmoshub-4": "cosmos1ac8va444x67ghwsersq6sssywcx67h75s2v5uz"
         }
       }
     ]
