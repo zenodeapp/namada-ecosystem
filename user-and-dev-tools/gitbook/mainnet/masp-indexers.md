@@ -125,3 +125,8 @@
 - **Discord UserName**: itrocket
 - **GitHub Account**: itrocket-team
 
+---
+- **Indexer API URL**: https://masp.namada.tududes.com/
+- **Team or Contributor Name**: TuDudes
+- **Discord UserName**: sirouk
+- **GitHub Account**: sirouk
