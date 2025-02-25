@@ -3,9 +3,9 @@
     "chains": [
       {
         "chain_id": "campfire-square.ff09671d333707",
-        "client_id": "07-tendermint-38",
-        "connection_id": "connection-16",
-        "channel_id": "channel-8",
+        "client_id": "07-tendermint-55",
+        "connection_id": "connection-23",
+        "channel_id": "channel-14",
         "port_id": "transfer",
         "supported_tokens": [
           {
@@ -17,9 +17,9 @@
       },
       {
         "chain_id": "cosmoshub-4",
-        "client_id": "07-tendermint-1347",
-        "connection_id": "connection-1085",
-        "channel_id": "channel-1298",
+        "client_id": "07-tendermint-1354",
+        "connection_id": "connection-1091",
+        "channel_id": "channel-1319",
         "port_id": "transfer",
         "supported_tokens": [
           {
@@ -35,6 +35,7 @@
         "team_or_contributor_name": "Mandragora",
         "discord_username": "danielmandragora",
         "github_account": "McDaan",
+        "creator_maintainer": "yes",
         "relayer_wallet_address": {
           "campfire": "tnam1qrrr8vq8dsckt7ugd0e4fmdcmk322thntqv9uhwg",
           "cosmoshub-4": "cosmos19uavz3w7p6h0ahlyw3wkhuwtynzl90203ftjd4"
