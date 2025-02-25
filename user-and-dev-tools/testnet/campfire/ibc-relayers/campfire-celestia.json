@@ -3,9 +3,9 @@
     "chains": [
       {
         "chain_id": "campfire-square.ff09671d333707",
-        "client_id": "07-tendermint-49",
-        "connection_id": "connection-19",
-        "channel_id": "channel-10",
+        "client_id": "07-tendermint-56",
+        "connection_id": "connection-24",
+        "channel_id": "channel-15",
         "port_id": "transfer",
         "supported_tokens": [
           {
@@ -17,9 +17,9 @@
       },
       {
         "chain_id": "celestia",
-        "client_id": "07-tendermint-102",
-        "connection_id": "connection-69",
-        "channel_id": "channel-65",
+        "client_id": "07-tendermint-106",
+        "connection_id": "connection-73",
+        "channel_id": "channel-81",
         "port_id": "transfer",
         "supported_tokens": [
           {
@@ -35,6 +35,7 @@
         "team_or_contributor_name": "Mandragora",
         "discord_username": "danielmandragora",
         "github_account": "McDaan",
+        "creator_maintainer": "yes",
         "relayer_wallet_address": {
           "campfire": "tnam1qrrr8vq8dsckt7ugd0e4fmdcmk322thntqv9uhwg",
           "celestia": "celestia19uavz3w7p6h0ahlyw3wkhuwtynzl9020qr6zhc"
