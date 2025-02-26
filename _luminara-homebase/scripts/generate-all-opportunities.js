@@ -1,26 +1,32 @@
 const fs = require('fs');
 const path = require('path');
 
-// Définir le dossier des opportunités et le fichier de sortie
+// Define the opportunities folder and the output file
 const opportunitiesFolder = './opportunities';
 const outputFile = path.join(opportunitiesFolder, 'all_opportunities.json');
 
 const opportunities = [];
 
-// Lire tous les fichiers JSON dans le dossier des opportunités
+// Read all JSON files in the opportunities folder
 fs.readdirSync(opportunitiesFolder).forEach(file => {
-    if (path.extname(file) === '.json' && file !== 'all_opportunities.json') {
+    if (
+        path.extname(file) === '.json' &&                 // Only JSON files
+        !file.startsWith('_') &&                           // Exclude files starting with an underscore (e.g., _opportunity_model.json)
+        file !== 'all_opportunities.json'                  // Exclude the aggregated file itself
+    ) {
         const filePath = path.join(opportunitiesFolder, file);
         try {
             const opportunity = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
             opportunities.push(opportunity);
-            console.log(`✔️ Chargé : ${file}`);
+            console.log(`✔️ Loaded: ${file}`);
         } catch (error) {
-            console.error(`❌ Erreur lors de la lecture de ${file} :`, error.message);
+            console.error(`❌ Error reading ${file}:`, error.message);
         }
+    } else {
+        console.log(`⏭️ Skipped: ${file}`);
     }
 });
 
-// Écrire toutes les opportunités dans un seul fichier JSON
+// Write all valid opportunities to a single JSON file
 fs.writeFileSync(outputFile, JSON.stringify(opportunities, null, 2), 'utf-8');
-console.log(`🚀 Fichier ${outputFile} généré avec ${opportunities.length} opportunités.`);
+console.log(`🚀 File ${outputFile} generated with ${opportunities.length} opportunities.`);
