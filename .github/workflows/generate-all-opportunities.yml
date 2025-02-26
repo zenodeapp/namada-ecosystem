@@ -1,0 +1,37 @@
+name: Generate All Opportunities JSON
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main  # Branche cible lors du merge
+    paths:
+      - 'opportunities/*.json'  # Se déclenche uniquement si des fichiers JSON du dossier opportunities sont modifiés
+
+jobs:
+  build:
+    if: github.event.pull_request.merged == true  # S'assure que la PR est bien mergée (et non simplement fermée)
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Generate all_opportunities.json
+      run: node scripts/generate-all-opportunities.js
+
+    - name: Commit changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add opportunities/all_opportunities.json
+        git commit -m 'Auto-generate all_opportunities.json'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
