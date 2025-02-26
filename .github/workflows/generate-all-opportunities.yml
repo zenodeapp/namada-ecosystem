@@ -1,17 +1,23 @@
 name: Generate All Opportunities JSON
 
 on:
+  push:
+    branches:
+      - main  # Trigger on direct commits to main
+    paths:
+      - 'opportunities/*.json'  # Only trigger for JSON files in the opportunities folder
+
   pull_request:
     types:
       - closed
     branches:
-      - main  # Branche cible lors du merge
+      - main
     paths:
-      - 'opportunities/*.json'  # Se déclenche uniquement si des fichiers JSON du dossier opportunities sont modifiés
+      - 'opportunities/*.json'
 
 jobs:
   build:
-    if: github.event.pull_request.merged == true  # S'assure que la PR est bien mergée (et non simplement fermée)
+    if: github.event.pull_request.merged == true || github.event_name == 'push'
     runs-on: ubuntu-latest
 
     steps:
