@@ -1,0 +1,17 @@
+{
+  "opportunity": {
+    "title": "A short descriptive title",
+    "shortDescription": "A short explanation of the opportunity",
+    "proposer": {
+      "name": "Name of the proposer",
+      "contact": "Contact email or Discord username"
+    },
+    "participants": [
+      {
+        "name": "Name of the participant",
+        "contact": "Contact email or Discord username"
+      }
+    ],
+    "status": "The current status ('Open', 'In Progress', or 'Completed')"
+  }
+}
