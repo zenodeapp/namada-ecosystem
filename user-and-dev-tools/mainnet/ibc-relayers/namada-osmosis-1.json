@@ -2,6 +2,7 @@
   {
     "chains": [
       {
+        "chain_name": "NAMADA",
         "chain_id": "namada.5f5de2dd1b88cba30586420",
         "client_id": "07-tendermint-2",
         "connection_id": "connection-1",
@@ -16,6 +17,7 @@
         ]
       },
       {
+        "chain_name": "OSMOSIS",
         "chain_id": "osmosis-1",
         "client_id": "07-tendermint-3433",
         "connection_id": "connection-10590",
