@@ -1,128 +1,120 @@
-{
-  "chains": [
-    {
-      "chain_name": "NAMADA",
-      "logo_url": "https://namada.community/IMG/namada-logo.png",
-      "chain_id": "namada.5f5de2dd1b88cba30586420",
-      "client_id": "07-tendermint-4",
-      "connection_id": "connection-3",
-      "channel_id": "channel-3",
-      "port_id": "transfer",
-      "supported_tokens": [
-        {
-          "denom": "tnam1q9gr66cvu4hrzm0sd5kmlnjje82gs3xlfg3v6nu7",
-          "symbol": "NAM",
-          "decimals": 6
+[
+  {
+    "chains": [
+      {
+        "chain_name": "NAMADA",
+        "logo_url": "https://namada.community/IMG/namada-logo.png", 
+        "chain_id": "namada.5f5de2dd1b88cba30586420",
+        "client_id": "07-tendermint-4",
+        "connection_id": "connection-3",
+        "channel_id": "channel-3",
+        "port_id": "transfer",
+        "supported_tokens": [
+          {
+            "denom": "tnam1q9gr66cvu4hrzm0sd5kmlnjje82gs3xlfg3v6nu7",
+            "symbol": "NAM",
+            "decimals": 6
+          }
+        ]
+      },
+      {
+        "chain_name": "CELESTIA",
+        "logo_url": "https://namada.community/IMG/celestia-logo.svg", 
+        "chain_id": "celestia",
+        "client_id": "07-tendermint-105",
+        "connection_id": "connection-72",
+        "channel_id": "channel-73",
+        "port_id": "transfer",
+        "supported_tokens": [
+          {
+            "denom": "utia",
+            "symbol": "TIA",
+            "decimals": 6
+          }
+        ]
+      }
+    ],
+    "relayers": [
+      {
+        "team_or_contributor_name": "Mandragora",
+        "discord_username": "danielmandragora",
+        "github_account": "McDaan",
+        "creator_maintainer": "yes",
+        "relayer_wallet_address": {
+          "namada": "tnam1qp467577tlh0r3kl8xekxrj8ea3r898ffszn7q4d",
+          "celestia": "celestia17mhy2662y598awhsrln7apz00ye6v4r9n94erp"
         }
-      ]
-    },
-    {
-      "chain_name": "CELESTIA",
-      "logo_url": "https://namada.community/IMG/celestia-logo.svg",
-      "chain_id": "celestia",
-      "client_id": "07-tendermint-105",
-      "connection_id": "connection-72",
-      "channel_id": "channel-73",
-      "port_id": "transfer",
-      "supported_tokens": [
-        {
-          "denom": "utia",
-          "symbol": "TIA",
-          "decimals": 6
+      },
+      {
+        "team_or_contributor_name": "max-03",
+        "discord_username": "power542",
+        "github_account": "maxpower-01",
+        "creator_maintainer": "no",
+        "relayer_wallet_address": {
+          "namada": "tnam1qzff7crvt7zenlw07w5q0a7hm05ymsg5tqzn8ttc",
+          "celestia": "celestia1ac8va444x67ghwsersq6sssywcx67h75pqayx0"
         }
-      ]
-    }
-  ],
-  "relayers": [
-    {
-      "team_or_contributor_name": "Mandragora",
-      "discord_username": "danielmandragora",
-      "github_account": "McDaan",
-      "creator_maintainer": "yes",
-      "relayer_wallet_address": {
-        "namada": "tnam1qp467577tlh0r3kl8xekxrj8ea3r898ffszn7q4d",
-        "celestia": "celestia17mhy2662y598awhsrln7apz00ye6v4r9n94erp"
+      },
+      {
+        "team_or_contributor_name": "anodeofzen",
+        "discord_username": "keymasterzen",
+        "github_account": "zenodeapp",
+        "creator_maintainer": "no",
+        "relayer_wallet_address": {
+          "namada": "tnam1qp6cxlnl97xaxk9ey7tqtz0605gqgjz2hvcnfgt2",
+          "celestia": "celestia1vu3w45sz03pxujzct8vc44jmhausuzy8wy9883"
+        }
+      },
+      {
+        "team_or_contributor_name": "ValidatorVN",
+        "discord_username": "validatorvn",
+        "github_account": "validatorvn",
+        "creator_maintainer": "no",
+        "relayer_wallet_address": {
+          "namada": "tnam1qp8ctrxp62eqw6hnnm2q42zpl8js2pk8f5jxtzgt",
+          "celestia": "celestia1cjhz8st5409k2nzfcpcnexehjxh7k2fg8env8s"
+        }
+      },
+      {
+        "team_or_contributor_name": "pro-nodes75",
+        "discord_username": "shurinoff, sw33pronodes",
+        "github_account": "shurinov, svv28",
+        "creator_maintainer": "no",
+        "relayer_wallet_address": {
+          "namada": "tnam1qqxnkp7spz6xs3er6xw9k3rjm9lxl78k95vxrnfd",
+          "celestia": "celestia1fq884cew9kdqlcum0hfa27xzyhd3edet8hnk39"
+        }
+      },
+      {
+        "team_or_contributor_name": "CosmicValidator",
+        "discord_username": "harish0x12",
+        "github_account": "harish551",
+        "creator_maintainer": "no",
+        "relayer_wallet_address": {
+          "namada": "tnam1qr4fn9smk8hh2s3nm4rqq93wh2exf32gpu6spl7q",
+          "celestia": "celestia1jfj9x52lse6a5r2ywnvgq3s9jrg7p09vcev5vs"
+        }
+      },
+      {
+        "team_or_contributor_name": "Sproutstake",
+        "discord_username": "oneplus",
+        "github_account": "TonyStarkMan2",
+        "creator_maintainer": "no",
+        "relayer_wallet_address": {
+          "namada": "tnam1qz4349xxw53a2hhnnejvth048xx0dgzgz5q2pckd",
+          "celestia": "celestia1x7zpfu627g58xfrqxl2awva4j45lhnzlx09yvv"
+        }
+      },
+      {
+        "team_or_contributor_name": "Stake&Relax 🦥",
+        "discord_username": "manueldb2",
+        "github_account": "StakeandRelax-Validator",
+        "creator_maintainer": "no",
+        "relayer_wallet_address": {
+          "namada": "tnam1qr8z58egh28eh5k7ed4jwt646acerlzs0q6r2u0n",
+          "celestia": "celestia1qx6nnykvn390su7hrtunvdj509khadehgchpnt"
+        }
       }
-    },
-    {
-      "team_or_contributor_name": "max-03",
-      "discord_username": "power542",
-      "github_account": "maxpower-01",
-      "creator_maintainer": "no",
-      "relayer_wallet_address": {
-        "namada": "tnam1qzff7crvt7zenlw07w5q0a7hm05ymsg5tqzn8ttc",
-        "celestia": "celestia1ac8va444x67ghwsersq6sssywcx67h75pqayx0"
-      }
-    },
-    {
-      "team_or_contributor_name": "anodeofzen",
-      "discord_username": "keymasterzen",
-      "github_account": "zenodeapp",
-      "creator_maintainer": "no",
-      "relayer_wallet_address": {
-        "namada": "tnam1qp6cxlnl97xaxk9ey7tqtz0605gqgjz2hvcnfgt2",
-        "celestia": "celestia1vu3w45sz03pxujzct8vc44jmhausuzy8wy9883"
-      }
-    },
-    {
-      "team_or_contributor_name": "ValidatorVN",
-      "discord_username": "validatorvn",
-      "github_account": "validatorvn",
-      "creator_maintainer": "no",
-      "relayer_wallet_address": {
-        "namada": "tnam1qp8ctrxp62eqw6hnnm2q42zpl8js2pk8f5jxtzgt",
-        "celestia": "celestia1cjhz8st5409k2nzfcpcnexehjxh7k2fg8env8s"
-      }
-    },
-    {
-      "team_or_contributor_name": "pro-nodes75",
-      "discord_username": "shurinoff, sw33pronodes",
-      "github_account": "shurinov, svv28",
-      "creator_maintainer": "no",
-      "relayer_wallet_address": {
-        "namada": "tnam1qqxnkp7spz6xs3er6xw9k3rjm9lxl78k95vxrnfd",
-        "celestia": "celestia1fq884cew9kdqlcum0hfa27xzyhd3edet8hnk39"
-      }
-    },
-    {
-      "team_or_contributor_name": "CosmicValidator",
-      "discord_username": "harish0x12",
-      "github_account": "harish551",
-      "creator_maintainer": "no",
-      "relayer_wallet_address": {
-        "namada": "tnam1qr4fn9smk8hh2s3nm4rqq93wh2exf32gpu6spl7q",
-        "celestia": "celestia1jfj9x52lse6a5r2ywnvgq3s9jrg7p09vcev5vs"
-      }
-    },
-    {
-      "team_or_contributor_name": "Sproutstake",
-      "discord_username": "oneplus",
-      "github_account": "TonyStarkMan2",
-      "creator_maintainer": "no",
-      "relayer_wallet_address": {
-        "namada": "tnam1qz4349xxw53a2hhnnejvth048xx0dgzgz5q2pckd",
-        "celestia": "celestia1x7zpfu627g58xfrqxl2awva4j45lhnzlx09yvv"
-      }
-    },
-    {
-      "team_or_contributor_name": "Stake&Relax 🦥",
-      "discord_username": "manueldb2",
-      "github_account": "StakeandRelax-Validator",
-      "creator_maintainer": "no",
-      "relayer_wallet_address": {
-        "namada": "tnam1qr8z58egh28eh5k7ed4jwt646acerlzs0q6r2u0n",
-        "celestia": "celestia1qx6nnykvn390su7hrtunvdj509khadehgchpnt"
-      }
-    },
-    {
-      "team_or_contributor_name": "LoserBoy",
-      "discord_username": "tonymarma",
-      "github_account": "tonymarma",
-      "creator_maintainer": "no",
-      "relayer_wallet_address": {
-        "namada": "tnam1qzzwcgj4r6qj60acj6wr95xqmh6k9kz3vs0vgm0s",
-        "celestia": "celestia1hn635w0h807r3laaz0umzrwz7xxu4rvst5ucvl"
-      }
-    }
-  ]
-}
+    ]
+  }
+]
