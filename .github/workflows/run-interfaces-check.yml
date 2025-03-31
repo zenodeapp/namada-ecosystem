@@ -1,5 +1,8 @@
 name: Run Interface Status Check
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "*/30 * * * *"  # Toutes les 30 minutes
