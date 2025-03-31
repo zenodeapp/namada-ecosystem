@@ -5,8 +5,8 @@ permissions:
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # Toutes les 30 minutes
-  workflow_dispatch:        # Permet de le lancer manuellement
+    - cron: "*/30 * * * *"  # Every 30 minutes
+  workflow_dispatch:        # Allow manual trigger
 
 jobs:
   check-interfaces:
@@ -33,6 +33,7 @@ jobs:
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
+          git pull --rebase origin main
           git add _luminara-homebase/interface-status.json
           git commit -m "🔄 Update interface-status.json" || echo "No changes to commit"
           git push
