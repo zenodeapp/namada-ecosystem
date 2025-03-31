@@ -37,5 +37,5 @@ jobs:
           git pull --rebase origin main
           git stash pop
           git add _luminara-homebase/interface-status.json
-          git commit -m "🔄 Update interface-status.json" || echo "No changes to commit"
+          git commit -m "Update interface-status.json" || echo "No changes to commit"
           git push
