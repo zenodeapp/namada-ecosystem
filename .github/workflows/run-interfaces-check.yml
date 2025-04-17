@@ -33,9 +33,19 @@ jobs:
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
-          git stash
+
+          git stash || echo "ℹ️ Nothing to stash"
           git pull --rebase origin main
-          git stash pop
-          git add -f _luminara-homebase/interface-status.json
-          git commit -m "Update interface-status.json" || echo "No changes to commit"
-          git push
+          git stash pop || echo "ℹ️ Nothing to pop"
+
+          if [ -f "_luminara-homebase/interface-status.json" ]; then
+            git add -f _luminara-homebase/interface-status.json
+            if git diff --cached --quiet; then
+              echo "✅ No changes to commit"
+            else
+              git commit -m "Update interface-status.json"
+              git push
+            fi
+          else
+            echo "⚠️ File not generated – nothing to commit"
+          fi
