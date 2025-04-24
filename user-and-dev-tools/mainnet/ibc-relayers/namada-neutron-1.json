@@ -3,7 +3,7 @@
     "chains": [
       {
         "chain_name": "NAMADA",
-        "logo_url": "https://namada.community/IMG/namada-logo.png", 
+        "logo_url": "https://namada.community/IMG/namada-logo.png",
         "chain_id": "namada.5f5de2dd1b88cba30586420",
         "client_id": "07-tendermint-11",
         "connection_id": "connection-8",
@@ -53,6 +53,16 @@
         "relayer_wallet_address": {
           "namada": "tnam1qp6cxlnl97xaxk9ey7tqtz0605gqgjz2hvcnfgt2",
           "neutron-1": "neutron1vu3w45sz03pxujzct8vc44jmhausuzy8m3a48m"
+        }
+      },
+      {
+        "team_or_contributor_name": "ContributionDAO",
+        "discord_username": "pongchain, ntpcontribute",
+        "github_account": "llPorZall, addicola",
+        "creator_maintainer": "no",
+        "relayer_wallet_address": {
+          "namada": "tnam1qp8fnu6nqwprcd25pl44mv0qmkvxt0gj9qcptehl",
+          "neutron-1": "neutron1794lvr70hcxxckqm6dzktsr7sduh8qg29f7g0v"
         }
       }
     ]
