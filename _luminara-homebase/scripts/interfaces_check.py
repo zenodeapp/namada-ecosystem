@@ -154,10 +154,10 @@ async def process_network(session, network, sources):
 
         config = await parse_config(session, interface_url)
         settings_tasks = [
-            get_service_data(session, "indexer", config.get("indexer")),
-            get_service_data(session, "rpc", config.get("rpc")),
-            get_service_data(session, "masp", config.get("masp"))
-        ]
+    get_service_data(session, service, url)
+    for service, url in config.items()
+    if url != "n/a"
+]
         settings = await asyncio.gather(*settings_tasks)
 
         namada_version = next((s.get("namada_version") for s in settings if s["service"] == "rpc"), "n/a")
