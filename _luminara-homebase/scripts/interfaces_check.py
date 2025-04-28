@@ -42,7 +42,7 @@ def fetch_url(url, retries=3, timeout=5):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), context=SSL_CONTEXT, timeout=timeout) as response:
                 return response.read().decode('utf-8')
-        except:
+        except Exception:
             time.sleep(2)
     return None
 
@@ -50,8 +50,8 @@ def fetch_url_bytes(url, retries=3, timeout=5):
     for _ in range(retries):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), context=SSL_CONTEXT, timeout=timeout) as response:
-                return response.read()  # PAS de decode !
-        except:
+                return response.read()  # Do not decode!
+        except Exception:
             time.sleep(2)
     return None
 
@@ -79,7 +79,7 @@ def parse_config(url):
     if not data:
         return {"rpc": "n/a", "indexer": "n/a", "masp": "n/a"}
     try:
-        config = tomllib.loads(data)
+        config = tomllib.loads(data.decode("utf-8"))  # <-- FIXED: decode bytes to string
         return {
             "rpc": config.get("rpc_url", "n/a"),
             "indexer": config.get("indexer_url", "n/a"),
@@ -97,7 +97,7 @@ def compare_versions(current, required):
         return tuple(map(int, v.split('.')))
     try:
         return version_tuple(current) >= version_tuple(required)
-    except:
+    except Exception:
         return False
 
 def determine_status(block_height, latest_block, service_conf):
@@ -161,7 +161,7 @@ for network, sources in INTERFACES.items():
         continue
     try:
         interfaces = json.loads(interfaces_json)
-    except:
+    except Exception:
         continue
 
     network_interfaces = []
