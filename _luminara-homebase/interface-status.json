@@ -1,6 +1,11 @@
 {
+<<<<<<< Updated upstream
     "script_start_time": "2025-04-28T10:45:18.271495+00:00Z",
     "script_end_time": "2025-04-28T10:47:20.168426+00:00Z",
+=======
+    "script_start_time": "2025-04-28T10:45:11.042417+00:00Z",
+    "script_end_time": "2025-04-28T10:47:44.834589+00:00Z",
+>>>>>>> Stashed changes
     "required_versions": {
         "interface": "1.19.0",
         "indexer": "2.4.4",
@@ -23,7 +28,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://rpc.namada.tududes.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812092",
+=======
+                            "latest_block_height": "1812090",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -31,7 +40,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812091",
+=======
+                            "latest_block_height": "1812090",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -57,7 +70,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://rpc-namada.5elementsnodes.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812092",
+=======
+                            "latest_block_height": "1812091",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -65,7 +82,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://index2-namada.5elementsnodes.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812092",
+=======
+                            "latest_block_height": "1812091",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -73,7 +94,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://masp2-namada.5elementsnodes.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812091",
+=======
+                            "latest_block_height": "1812090",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -91,7 +116,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-rpc.hadesguard.tech",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812092",
+=======
+                            "latest_block_height": "1812091",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -99,7 +128,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812092",
+=======
+                            "latest_block_height": "1812091",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -107,7 +140,11 @@
                             "version": "1.2.1",
                             "service": "masp",
                             "url": "https://indexer-masp.hadesguard.tech",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812092",
+=======
+                            "latest_block_height": "1812091",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         }
@@ -125,7 +162,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-rpc.sproutstake.space",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812093",
+=======
+                            "latest_block_height": "1812092",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -133,7 +174,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://namada-api.sproutstake.space",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812093",
+=======
+                            "latest_block_height": "1812092",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -141,7 +186,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://namada-masp-api.sproutstake.space",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812093",
+=======
+                            "latest_block_height": "1812092",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -193,7 +242,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-mainnet-rpc.denodes.xyz",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812094",
+=======
+                            "latest_block_height": "1812095",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -201,7 +254,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://namada-indexer.denodes.xyz",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812094",
+=======
+                            "latest_block_height": "1812095",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -209,7 +266,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://namada-masp-indexer.denodes.xyz",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812094",
+=======
+                            "latest_block_height": "1812095",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -227,7 +288,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-rpc.palamar.io:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812095",
+=======
+                            "latest_block_height": "1812096",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -261,7 +326,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://rpc.namada.stakeup.tech",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812095",
+=======
+                            "latest_block_height": "1812096",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -269,7 +338,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://indexer.namada.stakeup.tech",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812095",
+=======
+                            "latest_block_height": "1812096",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -277,7 +350,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://masp-indexer.namada.stakeup.tech",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812095",
+=======
+                            "latest_block_height": "1812096",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -295,7 +372,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://rpc.namada-archive.citizenweb3.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812096",
+=======
+                            "latest_block_height": "1812097",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -303,7 +384,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://indexer.namada.citizenweb3.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812095",
+=======
+                            "latest_block_height": "1812097",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -329,7 +414,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-rpc.stakeandrelax.net:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812098",
+=======
+                            "latest_block_height": "1812100",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -337,7 +426,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://namada-indexer.stakeandrelax.net:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812098",
+=======
+                            "latest_block_height": "1812099",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -345,7 +438,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://namada-masp.stakeandrelax.net:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812098",
+=======
+                            "latest_block_height": "1812099",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -363,7 +460,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-mainnet-rpc.crouton.digital",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812099",
+=======
+                            "latest_block_height": "1812100",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -379,7 +480,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://namada-mainnet-masp-indexer.crouton.digital",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812099",
+=======
+                            "latest_block_height": "1812100",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -397,7 +502,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-rpc.emberstake.xyz",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812099",
+=======
+                            "latest_block_height": "1812101",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -405,7 +514,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://namada-idx.emberstake.xyz",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812099",
+=======
+                            "latest_block_height": "1812101",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -413,7 +526,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://namada-masp-idx.emberstake.xyz",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812099",
+=======
+                            "latest_block_height": "1812101",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -431,7 +548,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-rpc.nodes.guru:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812100",
+=======
+                            "latest_block_height": "1812102",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -439,7 +560,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://namada-indexer.nodes.guru:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812100",
+=======
+                            "latest_block_height": "1812102",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -447,7 +572,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://namada-masp.nodes.guru:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812099",
+=======
+                            "latest_block_height": "1812102",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -465,7 +594,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-public-rpc.shield-crypto.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812100",
+=======
+                            "latest_block_height": "1812102",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -473,7 +606,11 @@
                             "version": "2.4.4",
                             "service": "indexer",
                             "url": "https://namada-indexer.shield-crypto.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812100",
+=======
+                            "latest_block_height": "1812102",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -481,7 +618,11 @@
                             "version": "1.2.1",
                             "service": "masp",
                             "url": "https://namada-public-masp.shield-crypto.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812100",
+=======
+                            "latest_block_height": "1812102",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         }
@@ -499,7 +640,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-mainnet.rpc.l0vd.com/",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812101",
+=======
+                            "latest_block_height": "1812103",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -507,7 +652,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://namada-mainnet-indexer.rpc.l0vd.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812100",
+=======
+                            "latest_block_height": "1812103",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -515,7 +664,11 @@
                             "version": "1.2.1",
                             "service": "masp",
                             "url": "https://namada-mainnet-masp-indexer.rpc.l0vd.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812101",
+=======
+                            "latest_block_height": "1812103",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         }
@@ -567,7 +720,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-mainnet-rpc.itrocket.net:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812106",
+=======
+                            "latest_block_height": "1812109",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -575,7 +732,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812106",
+=======
+                            "latest_block_height": "1812109",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -583,7 +744,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://masp.namada.tududes.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812106",
+=======
+                            "latest_block_height": "1812109",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -601,7 +766,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://lightnode-rpc-mainnet-namada.grandvalleys.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812106",
+=======
+                            "latest_block_height": "1812109",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -609,7 +778,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://indexer-mainnet-namada.grandvalleys.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812106",
+=======
+                            "latest_block_height": "1812109",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -617,7 +790,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://masp-indexer-mainnet-namada.grandvalleys.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812106",
+=======
+                            "latest_block_height": "1812109",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -635,7 +812,11 @@
                             "namada_version": "1.1.1",
                             "service": "rpc",
                             "url": "https://namada-rpc.murphynode.net",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812107",
+=======
+                            "latest_block_height": "1812110",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -643,7 +824,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://indexer.namada.murphynode.net",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812107",
+=======
+                            "latest_block_height": "1812110",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -669,7 +854,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-mainnet-rpc.itrocket.net:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812107",
+=======
+                            "latest_block_height": "1812110",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -677,7 +866,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://namada-mainnet-indexer.itrocket.net:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812107",
+=======
+                            "latest_block_height": "1812110",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -703,7 +896,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada.loserboy.xyz",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812108",
+=======
+                            "latest_block_height": "1812111",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -711,7 +908,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812108",
+=======
+                            "latest_block_height": "1812111",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -729,7 +930,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://rpc.namada.tududes.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812108",
+=======
+                            "latest_block_height": "1812111",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -737,7 +942,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812108",
+=======
+                            "latest_block_height": "1812111",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -745,7 +954,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://masp.namada.tududes.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812108",
+=======
+                            "latest_block_height": "1812111",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -763,7 +976,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://rpc.namada.tududes.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812109",
+=======
+                            "latest_block_height": "1812112",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -771,7 +988,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812108",
+=======
+                            "latest_block_height": "1812112",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -779,7 +1000,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://masp.namada.tududes.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812108",
+=======
+                            "latest_block_height": "1812112",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
@@ -797,7 +1022,11 @@
                             "namada_version": "1.1.5",
                             "service": "rpc",
                             "url": "https://namada-mainnet-rpc.itrocket.net:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812109",
+=======
+                            "latest_block_height": "1812112",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": true
                         },
@@ -805,7 +1034,11 @@
                             "version": "2.3.0",
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812109",
+=======
+                            "latest_block_height": "1812112",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         },
@@ -813,7 +1046,11 @@
                             "version": "1.2.0",
                             "service": "masp",
                             "url": "https://masp.namada.tududes.com:443",
+<<<<<<< Updated upstream
                             "latest_block_height": "1812109",
+=======
+                            "latest_block_height": "1812112",
+>>>>>>> Stashed changes
                             "status": "Healthy",
                             "is_up_to_date": false
                         }
