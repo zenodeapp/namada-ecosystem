@@ -3,7 +3,6 @@ import aiohttp
 import json
 import tomllib
 import ssl
-import time
 import re
 import os
 from datetime import datetime, UTC
@@ -30,12 +29,12 @@ INTERFACES = {
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 SSL_CONTEXT = ssl.create_default_context()
 
-async def fetch_url(session, url, retries=3, timeout=5, return_bytes=False):
+async def fetch_url(session, url, retries=3, timeout=5):
     for attempt in range(retries):
         try:
             async with session.get(url, ssl=SSL_CONTEXT, timeout=timeout) as response:
                 response.raise_for_status()
-                return await response.read() if return_bytes else await response.text()
+                return await response.text()
         except Exception as e:
             if attempt == retries - 1:
                 print(f"[WARN] Failed to fetch {url}: {e}")
@@ -95,17 +94,18 @@ async def get_interface_version(session, url):
     return "n/a"
 
 async def parse_config(session, url):
-    config_data = await fetch_url(session, f"{url}/config.toml", timeout=3, return_bytes=True)
-    if not config_data:
-        return {"rpc": "n/a", "indexer": "n/a", "masp": "n/a"}
     try:
-        config = tomllib.loads(config_data)
-        return {
-            "rpc": config.get("rpc_url", "n/a"),
-            "indexer": config.get("indexer_url", "n/a"),
-            "masp": config.get("masp_indexer_url", "n/a")
-        }
-    except tomllib.TOMLDecodeError:
+        async with session.get(f"{url}/config.toml", ssl=SSL_CONTEXT, timeout=3) as response:
+            response.raise_for_status()
+            config_data = await response.read()
+            config = tomllib.loads(config_data)
+            return {
+                "rpc": config.get("rpc_url", "n/a"),
+                "indexer": config.get("indexer_url", "n/a"),
+                "masp": config.get("masp_indexer_url", "n/a")
+            }
+    except Exception as e:
+        print(f"[WARN] Failed to parse config for {url}: {e}")
         return {"rpc": "n/a", "indexer": "n/a", "masp": "n/a"}
 
 async def get_service_data(session, service, url):
