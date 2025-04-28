@@ -66,10 +66,11 @@ def get_interface_version(url):
     return "n/a"
 
 def parse_config(url):
-    if not (data := fetch_url(f"{url}/config.toml", timeout=5)) or not data.strip():
+    data = fetch_url(f"{url}/config.toml", timeout=5)
+    if not data or not data.strip():
         return {"rpc": "n/a", "indexer": "n/a", "masp": "n/a"}
     try:
-        config = tomllib.loads(data.encode('utf-8') if isinstance(data, str) else data)
+        config = tomllib.loads(data.encode('utf-8'))  # toujours encoder en bytes
         return {
             "rpc": config.get("rpc_url", "n/a"),
             "indexer": config.get("indexer_url", "n/a"),
