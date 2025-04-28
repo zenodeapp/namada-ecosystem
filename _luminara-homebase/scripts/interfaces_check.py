@@ -41,7 +41,16 @@ def fetch_url(url, retries=3, timeout=5):
     for _ in range(retries):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), context=SSL_CONTEXT, timeout=timeout) as response:
-                return response.read().decode("utf-8")
+                return response.read().decode('utf-8')
+        except:
+            time.sleep(2)
+    return None
+
+def fetch_url_bytes(url, retries=3, timeout=5):
+    for _ in range(retries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), context=SSL_CONTEXT, timeout=timeout) as response:
+                return response.read()  # PAS de decode !
         except:
             time.sleep(2)
     return None
@@ -66,11 +75,11 @@ def get_interface_version(url):
     return "n/a"
 
 def parse_config(url):
-    data = fetch_url(f"{url}/config.toml", timeout=5)
-    if not data or not data.strip():
+    data = fetch_url_bytes(f"{url}/config.toml", timeout=5)
+    if not data:
         return {"rpc": "n/a", "indexer": "n/a", "masp": "n/a"}
     try:
-        config = tomllib.loads(data.encode('utf-8'))
+        config = tomllib.loads(data)
         return {
             "rpc": config.get("rpc_url", "n/a"),
             "indexer": config.get("indexer_url", "n/a"),
