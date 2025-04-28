@@ -70,7 +70,7 @@ def parse_config(url):
     if not data or not data.strip():
         return {"rpc": "n/a", "indexer": "n/a", "masp": "n/a"}
     try:
-        config = tomllib.loads(data.encode('utf-8'))  # toujours encoder en bytes
+        config = tomllib.loads(data.encode('utf-8'))
         return {
             "rpc": config.get("rpc_url", "n/a"),
             "indexer": config.get("indexer_url", "n/a"),
