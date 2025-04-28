@@ -1,8 +1,8 @@
-import asyncio
-import aiohttp
+import urllib.request
 import json
 import tomllib
 import ssl
+import time
 import re
 import os
 from datetime import datetime, UTC
@@ -10,6 +10,9 @@ from bs4 import BeautifulSoup
 
 # Start time
 START_TIME = datetime.now(UTC).isoformat() + "Z"
+
+# Enable / Disable Housefire
+ENABLE_HOUSEFIRE = False
 
 # Paths
 BASE_PATH = "_luminara-homebase"
@@ -20,16 +23,12 @@ OUTPUT_PATH = os.path.join(BASE_PATH, "interface-status.json")
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     HEALTH_CONFIG = json.load(f)
 
-# Option pour activer/désactiver Housefire
-ENABLE_HOUSEFIRE = False
-
-# URLs
+# Interface sources
 INTERFACES = {
     "namada": {
-        "interface": "https://raw.githubusercontent.com/Luminara-Hub/namada-ecosystem/main/user-and-dev-tools/mainnet/interfaces.json",
+        "interface": "https://raw.githubusercontent.com/Luminara-Hub/namada-ecosystem/main/user-and-dev-tools/mainnet/interfaces.json"
     }
 }
-
 if ENABLE_HOUSEFIRE:
     INTERFACES["housefire"] = {
         "interface": "https://raw.githubusercontent.com/Luminara-Hub/namada-ecosystem/main/user-and-dev-tools/testnet/housefire/interfaces.json"
@@ -38,31 +37,46 @@ if ENABLE_HOUSEFIRE:
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 SSL_CONTEXT = ssl.create_default_context()
 
-# Limitation des connexions parallèles
-SEM = asyncio.Semaphore(5)  # max 5 connexions simultanées
+def fetch_url(url, retries=3, timeout=5):
+    for _ in range(retries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), context=SSL_CONTEXT, timeout=timeout) as response:
+                return response.read().decode("utf-8")
+        except:
+            time.sleep(2)
+    return None
 
-async def fetch_url(session, url, retries=3, timeout=5):
-    async with SEM:
-        for attempt in range(retries):
-            try:
-                async with session.get(url, ssl=SSL_CONTEXT, timeout=timeout) as response:
-                    response.raise_for_status()
-                    return await response.text()
-            except Exception as e:
-                if attempt == retries - 1:
-                    print(f"[WARN] Failed to fetch {url}: {e}")
-                await asyncio.sleep(2)
-        return None
-
-async def fetch_json(session, url):
-    data = await fetch_url(session, url)
-    if not data:
-        return {}
+def fetch_json(url):
+    data = fetch_url(url)
     try:
-        return json.loads(data)
+        return json.loads(data) if data else {}
     except json.JSONDecodeError:
-        print(f"[WARN] Failed to decode JSON from {url}")
         return {}
+
+def get_interface_version(url):
+    if not (r := fetch_url(url)):
+        return "n/a"
+    soup = BeautifulSoup(r, "html.parser")
+    script = soup.find("script", {"type": "module", "crossorigin": True})
+    if script and "src" in script.attrs:
+        js_url = f"{url.rstrip('/')}/{script['src'].lstrip('/')}"
+        js_content = fetch_url(js_url)
+        if js_content and (match := re.search(r'version\$1\s*=\s*"([\d.]+)"', js_content)):
+            return match.group(1)
+    return "n/a"
+
+def parse_config(url):
+    if not (data := fetch_url(f"{url}/config.toml", timeout=5)) or not data.strip():
+        return {"rpc": "n/a", "indexer": "n/a", "masp": "n/a"}
+    try:
+        config = tomllib.loads(data.encode('utf-8') if isinstance(data, str) else data)
+        return {
+            "rpc": config.get("rpc_url", "n/a"),
+            "indexer": config.get("indexer_url", "n/a"),
+            "masp": config.get("masp_indexer_url", "n/a")
+        }
+    except tomllib.TOMLDecodeError:
+        return {"rpc": "n/a", "indexer": "n/a", "masp": "n/a"}
 
 def extract_moniker_version(moniker):
     match = re.search(r"[-_]v(\d+\.\d+\.\d+)", moniker)
@@ -91,44 +105,11 @@ def determine_status(block_height, latest_block, service_conf):
         return "Outdated"
     return "Down"
 
-async def get_interface_version(session, url):
-    html = await fetch_url(session, url)
-    if not html:
-        return "n/a"
-    soup = BeautifulSoup(html, "html.parser")
-    script = soup.find("script", {"type": "module", "crossorigin": True})
-    if script and "src" in script.attrs:
-        js_url = f"{url.rstrip('/')}/{script['src'].lstrip('/')}"
-        js_content = await fetch_url(session, js_url)
-        if js_content:
-            match = re.search(r'version\\$1\\s*=\\s*\"([\\d.]+)\"', js_content)
-            if match:
-                return match.group(1)
-    return "n/a"
-
-async def parse_config(session, url):
-    try:
-        async with session.get(f"{url}/config.toml", ssl=SSL_CONTEXT, timeout=10) as response:
-            response.raise_for_status()
-            config_data = await response.read()
-            if not config_data:
-                print(f"[WARN] Empty config.toml at {url}")
-                return {"rpc": "n/a", "indexer": "n/a", "masp": "n/a"}
-            config = tomllib.loads(config_data)
-            return {
-                "rpc": config.get("rpc_url", "n/a"),
-                "indexer": config.get("indexer_url", "n/a"),
-                "masp": config.get("masp_indexer_url", "n/a")
-            }
-    except Exception as e:
-        print(f"[WARN] Failed to parse config for {url}: {e}")
-        return {"rpc": "n/a", "indexer": "n/a", "masp": "n/a"}
-
-async def get_service_data(session, service, url):
+def get_service_data(service, url):
     if url == "n/a":
         return None
     if service == "rpc":
-        rpc_status = await fetch_json(session, f"{url}/status")
+        rpc_status = fetch_json(f"{url}/status")
         sync_info = rpc_status.get("result", {}).get("sync_info", {})
         node_info = rpc_status.get("result", {}).get("node_info", {})
         return {
@@ -140,10 +121,10 @@ async def get_service_data(session, service, url):
         }
     else:
         if "indexer" in service:
-            block_data = await fetch_json(session, f"{url}/api/v1/chain/block/latest")
+            block_data = fetch_json(f"{url}/api/v1/chain/block/latest")
         else:
-            block_data = await fetch_json(session, f"{url}/api/v1/height")
-        health_data = await fetch_json(session, f"{url}/health")
+            block_data = fetch_json(f"{url}/api/v1/height")
+        health_data = fetch_json(f"{url}/health")
         return {
             "version": health_data.get("version", "n/a"),
             "service": service,
@@ -151,17 +132,30 @@ async def get_service_data(session, service, url):
             "latest_block_height": str(block_data.get("block_height") or block_data.get("block") or "0")
         }
 
-async def process_network(session, network, sources):
-    interfaces_json = await fetch_url(session, sources["interface"], timeout=5)
+# Structure output
+output_data = {
+    "script_start_time": START_TIME,
+    "script_end_time": "",
+    "required_versions": {
+        "interface": HEALTH_CONFIG.get("namada", {}).get("interface", {}).get("required_version", "n/a"),
+        "indexer": HEALTH_CONFIG.get("namada", {}).get("services", {}).get("indexer", {}).get("required_version", "n/a"),
+        "rpc": HEALTH_CONFIG.get("namada", {}).get("services", {}).get("rpc", {}).get("required_version", "n/a"),
+        "masp": HEALTH_CONFIG.get("namada", {}).get("services", {}).get("masp", {}).get("required_version", "n/a")
+    },
+    "networks": []
+}
+
+for network, sources in INTERFACES.items():
+    interfaces_json = fetch_url(sources["interface"], timeout=5)
     if not interfaces_json:
-        return None
+        continue
     try:
         interfaces = json.loads(interfaces_json)
     except:
-        return None
+        continue
 
-    config_ref = HEALTH_CONFIG.get(network, {})
     network_interfaces = []
+    config_ref = HEALTH_CONFIG.get(network, {})
 
     for interface in interfaces:
         if "Namadillo" not in interface.get("Interface Name (Namadillo or Custom)", ""):
@@ -170,35 +164,23 @@ async def process_network(session, network, sources):
         if not interface_url:
             continue
 
-        config = await parse_config(session, interface_url)
-        settings_tasks = [
-            get_service_data(session, service, url)
-            for service, url in config.items()
-            if url != "n/a"
-        ]
-        settings_raw = await asyncio.gather(*settings_tasks)
-        settings = [s for s in settings_raw if s]
+        config = parse_config(interface_url)
+        settings = [get_service_data(service, url) for service, url in config.items() if url != "n/a"]
+        settings = [s for s in settings if s]
 
-        if not settings:
-            continue
+        namada_version = next((s["namada_version"] for s in settings if s["service"] == "rpc"), "n/a")
+        latest_block = max(
+            int(s["latest_block_height"]) for s in settings
+            if s.get("latest_block_height", "").isdigit()
+        ) if any(s.get("latest_block_height", "").isdigit() for s in settings) else 0
 
-        namada_version = next((s.get("namada_version") for s in settings if s["service"] == "rpc"), "n/a")
-        latest_block = max((int(s.get("latest_block_height", 0)) for s in settings if s.get("latest_block_height", "0").isdigit()), default=0)
-
-        for idx, s in enumerate(settings):
-            height = int(s.get("latest_block_height", 0)) if s.get("latest_block_height", "0").isdigit() else 0
+        for s in settings:
+            height = int(s.get("latest_block_height", 0)) if s.get("latest_block_height", "").isdigit() else 0
             service_conf = config_ref.get("services", {}).get(s["service"], {})
-            settings[idx] = {
-                "service": s.get("service"),
-                "url": s.get("url", "n/a"),
-                "version": s.get("version", "n/a"),
-                "is_up_to_date": compare_versions(s.get("version", "n/a"), service_conf.get("required_version", "n/a")),
-                "latest_block_height": s.get("latest_block_height", "n/a"),
-                "status": determine_status(height, latest_block, service_conf),
-                **({"namada_version": s.get("namada_version", "n/a")} if s["service"] == "rpc" else {})
-            }
+            s["status"] = determine_status(height, latest_block, service_conf)
+            s["is_up_to_date"] = compare_versions(s.get("version", "n/a"), service_conf.get("required_version", "n/a"))
 
-        interface_version = await get_interface_version(session, interface_url)
+        interface_version = get_interface_version(interface_url)
         interface_required_version = config_ref.get("interface", {}).get("required_version", "n/a")
 
         network_interfaces.append({
@@ -210,30 +192,9 @@ async def process_network(session, network, sources):
             "settings": settings
         })
 
-    return {"network": network, "interface": network_interfaces}
+    output_data["networks"].append({"network": network, "interface": network_interfaces})
 
-async def main():
-    output_data = {
-        "script_start_time": START_TIME,
-        "script_end_time": "",
-        "required_versions": {
-            "interface": HEALTH_CONFIG.get("namada", {}).get("interface", {}).get("required_version", "n/a"),
-            "indexer": HEALTH_CONFIG.get("namada", {}).get("services", {}).get("indexer", {}).get("required_version", "n/a"),
-            "rpc": HEALTH_CONFIG.get("namada", {}).get("services", {}).get("rpc", {}).get("required_version", "n/a"),
-            "masp": HEALTH_CONFIG.get("namada", {}).get("services", {}).get("masp", {}).get("required_version", "n/a")
-        },
-        "networks": []
-    }
+output_data["script_end_time"] = datetime.now(UTC).isoformat() + "Z"
 
-    async with aiohttp.ClientSession(headers=HEADERS) as session:
-        tasks = [process_network(session, network, sources) for network, sources in INTERFACES.items()]
-        networks = await asyncio.gather(*tasks)
-        output_data["networks"] = [net for net in networks if net]
-
-    output_data["script_end_time"] = datetime.now(UTC).isoformat() + "Z"
-
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(output_data, f, indent=4)
-
-if __name__ == "__main__":
-    asyncio.run(main())
+with open(OUTPUT_PATH, "w", encoding="utf-8") as json_file:
+    json.dump(output_data, json_file, indent=4)
