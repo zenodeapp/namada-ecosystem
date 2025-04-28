@@ -20,26 +20,39 @@ OUTPUT_PATH = os.path.join(BASE_PATH, "interface-status.json")
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     HEALTH_CONFIG = json.load(f)
 
+# Option pour activer/désactiver Housefire
+ENABLE_HOUSEFIRE = False
+
 # URLs
 INTERFACES = {
-    "namada": {"interface": "https://raw.githubusercontent.com/Luminara-Hub/namada-ecosystem/main/user-and-dev-tools/mainnet/interfaces.json"},
-    "housefire": {"interface": "https://raw.githubusercontent.com/Luminara-Hub/namada-ecosystem/main/user-and-dev-tools/testnet/housefire/interfaces.json"}
+    "namada": {
+        "interface": "https://raw.githubusercontent.com/Luminara-Hub/namada-ecosystem/main/user-and-dev-tools/mainnet/interfaces.json",
+    }
 }
+
+if ENABLE_HOUSEFIRE:
+    INTERFACES["housefire"] = {
+        "interface": "https://raw.githubusercontent.com/Luminara-Hub/namada-ecosystem/main/user-and-dev-tools/testnet/housefire/interfaces.json"
+    }
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 SSL_CONTEXT = ssl.create_default_context()
 
+# Limitation des connexions parallèles
+SEM = asyncio.Semaphore(5)  # max 5 connexions simultanées
+
 async def fetch_url(session, url, retries=3, timeout=5):
-    for attempt in range(retries):
-        try:
-            async with session.get(url, ssl=SSL_CONTEXT, timeout=timeout) as response:
-                response.raise_for_status()
-                return await response.text()
-        except Exception as e:
-            if attempt == retries - 1:
-                print(f"[WARN] Failed to fetch {url}: {e}")
-            await asyncio.sleep(2)
-    return None
+    async with SEM:
+        for attempt in range(retries):
+            try:
+                async with session.get(url, ssl=SSL_CONTEXT, timeout=timeout) as response:
+                    response.raise_for_status()
+                    return await response.text()
+            except Exception as e:
+                if attempt == retries - 1:
+                    print(f"[WARN] Failed to fetch {url}: {e}")
+                await asyncio.sleep(2)
+        return None
 
 async def fetch_json(session, url):
     data = await fetch_url(session, url)
@@ -95,9 +108,12 @@ async def get_interface_version(session, url):
 
 async def parse_config(session, url):
     try:
-        async with session.get(f"{url}/config.toml", ssl=SSL_CONTEXT, timeout=3) as response:
+        async with session.get(f"{url}/config.toml", ssl=SSL_CONTEXT, timeout=10) as response:
             response.raise_for_status()
             config_data = await response.read()
+            if not config_data:
+                print(f"[WARN] Empty config.toml at {url}")
+                return {"rpc": "n/a", "indexer": "n/a", "masp": "n/a"}
             config = tomllib.loads(config_data)
             return {
                 "rpc": config.get("rpc_url", "n/a"),
@@ -109,6 +125,8 @@ async def parse_config(session, url):
         return {"rpc": "n/a", "indexer": "n/a", "masp": "n/a"}
 
 async def get_service_data(session, service, url):
+    if url == "n/a":
+        return None
     if service == "rpc":
         rpc_status = await fetch_json(session, f"{url}/status")
         sync_info = rpc_status.get("result", {}).get("sync_info", {})
@@ -154,11 +172,15 @@ async def process_network(session, network, sources):
 
         config = await parse_config(session, interface_url)
         settings_tasks = [
-    get_service_data(session, service, url)
-    for service, url in config.items()
-    if url != "n/a"
-]
-        settings = await asyncio.gather(*settings_tasks)
+            get_service_data(session, service, url)
+            for service, url in config.items()
+            if url != "n/a"
+        ]
+        settings_raw = await asyncio.gather(*settings_tasks)
+        settings = [s for s in settings_raw if s]
+
+        if not settings:
+            continue
 
         namada_version = next((s.get("namada_version") for s in settings if s["service"] == "rpc"), "n/a")
         latest_block = max((int(s.get("latest_block_height", 0)) for s in settings if s.get("latest_block_height", "0").isdigit()), default=0)
