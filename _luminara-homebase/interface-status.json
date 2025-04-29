@@ -1,13 +1,7 @@
 {
-<<<<<<< Updated upstream
-    "script_start_time": "2025-04-29T10:11:10.079984+00:00Z",
-    "script_end_time": "2025-04-29T10:13:33.982754+00:00Z",
-    "reference_latest_block_height": "1824297",
-=======
-    "script_start_time": "2025-04-29T10:13:11.824947+00:00Z",
-    "script_end_time": "2025-04-29T10:16:09.620388+00:00Z",
-    "reference_latest_block_height": "1824313",
->>>>>>> Stashed changes
+    "script_start_time": "2025-04-29T10:45:18.749837+00:00Z",
+    "script_end_time": "2025-04-29T10:48:33.345835+00:00Z",
+    "reference_latest_block_height": "1824597",
     "required_versions": {
         "interface": "1.19.0",
         "indexer": "2.4.4",
@@ -22,45 +16,37 @@
                     "team": "TuDudes",
                     "discord": "sirouk",
                     "url": "https://interface.namada.tududes.com",
+                    "status": "up",
                     "version": "1.18.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com:443",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824276",
-=======
-                            "latest_block_height": "1824293",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824572",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://masp.namada.tududes.com:443",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824276",
-=======
-                            "latest_block_height": "1824293",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824572",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://rpc.namada.tududes.com:443",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824276",
-=======
-                            "latest_block_height": "1824294",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824572",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -68,45 +54,37 @@
                     "team": "5ElementsNodes",
                     "discord": "h3ll0_friend",
                     "url": "https://namadillo.5elementsnodes.com",
+                    "status": "up",
                     "version": "1.19.0",
                     "is_up_to_date": true,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://index2-namada.5elementsnodes.com",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824276",
-=======
-                            "latest_block_height": "1824294",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824572",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://masp2-namada.5elementsnodes.com",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824276",
-=======
-                            "latest_block_height": "1824294",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824572",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://rpc-namada.5elementsnodes.com",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824276",
-=======
-                            "latest_block_height": "1824294",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824572",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -114,45 +92,37 @@
                     "team": "Hadesguard",
                     "discord": "hadesguard99",
                     "url": "https://interface.hadesguard.tech",
+                    "status": "up",
                     "version": "1.18.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824277",
-=======
-                            "latest_block_height": "1824294",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824573",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://indexer-masp.hadesguard.tech",
+                            "status": "up",
                             "version": "1.2.1",
                             "is_up_to_date": true,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824276",
-=======
-                            "latest_block_height": "1824294",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824573",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-rpc.hadesguard.tech",
+                            "status": "up",
                             "version": "0.37.11",
                             "is_up_to_date": false,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824277",
-=======
-                            "latest_block_height": "1824295",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824573",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -160,45 +130,37 @@
                     "team": "Sproutstake",
                     "discord": "oneplus",
                     "url": "https://namada-interface.sproutstake.space",
+                    "status": "up",
                     "version": "1.18.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://namada-api.sproutstake.space",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824278",
-=======
-                            "latest_block_height": "1824295",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824574",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://namada-masp-api.sproutstake.space",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824277",
-=======
-                            "latest_block_height": "1824295",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824574",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-rpc.sproutstake.space",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824278",
-=======
-                            "latest_block_height": "1824295",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824574",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -206,45 +168,37 @@
                     "team": "MELLIFERA",
                     "discord": "ruslan_mellifera",
                     "url": "https://namadillo.mellifera.network",
+                    "status": "up",
                     "version": "1.17.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://namada-mainnet-indexer.mellifera.network",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824278",
-=======
-                            "latest_block_height": "1824296",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824575",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://namada-mainnet-masp.mellifera.network",
+                            "status": "down",
                             "version": "n/a",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824278",
-=======
-                            "latest_block_height": "1824296",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "0",
+                            "sync_state": "sync_nok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-mainnet-rpc.mellifera.network",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.1",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824278",
-=======
-                            "latest_block_height": "1824296",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824575",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -252,45 +206,37 @@
                     "team": "deNodes",
                     "discord": "bombermine",
                     "url": "https://namadillo.denodes.xyz",
+                    "status": "up",
                     "version": "1.19.0",
                     "is_up_to_date": true,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://namada-indexer.denodes.xyz",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824279",
-=======
-                            "latest_block_height": "1824297",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824576",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://namada-masp-indexer.denodes.xyz",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824279",
-=======
-                            "latest_block_height": "1824297",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824576",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-mainnet-rpc.denodes.xyz",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824279",
-=======
-                            "latest_block_height": "1824297",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824576",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -298,45 +244,37 @@
                     "team": "Palamar",
                     "discord": "pa1amar",
                     "url": "https://namada-interface.palamar.io",
+                    "status": "up",
                     "version": "1.19.0",
                     "is_up_to_date": true,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://namada-indexer.palamar.io:443",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824280",
-=======
-                            "latest_block_height": "1824297",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824577",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://namada-masp.palamar.io:443",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824279",
-=======
-                            "latest_block_height": "1824297",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824577",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-rpc.palamar.io:443",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824280",
-=======
-                            "latest_block_height": "1824298",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824577",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -344,45 +282,37 @@
                     "team": "StakeUp",
                     "discord": "landeros",
                     "url": "https://namadillo.namada.stakeup.tech",
+                    "status": "up",
                     "version": "1.18.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://indexer.namada.stakeup.tech",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824280",
-=======
-                            "latest_block_height": "1824298",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824578",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://masp-indexer.namada.stakeup.tech",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824280",
-=======
-                            "latest_block_height": "1824298",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824578",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://rpc.namada.stakeup.tech",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824280",
-=======
-                            "latest_block_height": "1824298",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824578",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -390,41 +320,37 @@
                     "team": "Citizen Web3",
                     "discord": "alibabaedge, serejandmyself_citizenweb3",
                     "url": "https://namadillo.citizenweb3.com",
+                    "status": "up",
                     "version": "1.19.0",
                     "is_up_to_date": true,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://indexer.namada.citizenweb3.com",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824281",
-=======
-                            "latest_block_height": "1824299",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824578",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://masp-indexer.namada.citizenweb3.com",
+                            "status": "down",
                             "version": "n/a",
                             "is_up_to_date": false,
                             "latest_block_height": "0",
-                            "status": "Down"
+                            "sync_state": "sync_nok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://rpc.namada-archive.citizenweb3.com",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824281",
-=======
-                            "latest_block_height": "1824299",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824579",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -432,45 +358,37 @@
                     "team": "Stake&Relax \ud83e\udda5",
                     "discord": "manueldb2",
                     "url": "https://namadillo.stakeandrelax.net",
+                    "status": "up",
                     "version": "1.19.0",
                     "is_up_to_date": true,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://namada-indexer.stakeandrelax.net:443",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824283",
-=======
-                            "latest_block_height": "1824301",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824581",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://namada-masp.stakeandrelax.net:443",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824283",
-=======
-                            "latest_block_height": "1824301",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824581",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-rpc.stakeandrelax.net:443",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824284",
-=======
-                            "latest_block_height": "1824301",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824581",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -478,41 +396,37 @@
                     "team": "CroutonDigital",
                     "discord": "crouton.digital",
                     "url": "https://namadillo.crouton.digital",
+                    "status": "up",
                     "version": "1.17.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://namada-mainnet-indexer.crouton.digital",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
                             "latest_block_height": "1338918",
-                            "status": "Down"
+                            "sync_state": "sync_nok"
                         },
                         {
                             "service": "masp",
                             "url": "https://namada-mainnet-masp-indexer.crouton.digital",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824284",
-=======
-                            "latest_block_height": "1824302",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824582",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-mainnet-rpc.crouton.digital",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824284",
-=======
-                            "latest_block_height": "1824302",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824582",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -520,45 +434,37 @@
                     "team": "EmberStake",
                     "discord": "4rash",
                     "url": "https://namadillo.emberstake.xyz",
+                    "status": "up",
                     "version": "1.18.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://namada-idx.emberstake.xyz",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824285",
-=======
-                            "latest_block_height": "1824302",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824583",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://namada-masp-idx.emberstake.xyz",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824284",
-=======
-                            "latest_block_height": "1824302",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824583",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-rpc.emberstake.xyz",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824285",
-=======
-                            "latest_block_height": "1824302",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824583",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -566,45 +472,37 @@
                     "team": "Nodes.Guru",
                     "discord": "0xan_nodes_guru",
                     "url": "https://namada-interface.nodes.guru",
+                    "status": "up",
                     "version": "1.18.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://namada-indexer.nodes.guru:443",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824285",
-=======
-                            "latest_block_height": "1824303",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824583",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://namada-masp.nodes.guru:443",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824285",
-=======
-                            "latest_block_height": "1824303",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824584",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-rpc.nodes.guru:443",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824285",
-=======
-                            "latest_block_height": "1824303",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824583",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -612,45 +510,37 @@
                     "team": "shield-crypto",
                     "discord": "scaniashieldcrypto",
                     "url": "https://namadillo.shield-crypto.com",
+                    "status": "up",
                     "version": "1.19.0",
                     "is_up_to_date": true,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://namada-indexer.shield-crypto.com",
+                            "status": "up",
                             "version": "2.4.4",
                             "is_up_to_date": true,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824285",
-=======
-                            "latest_block_height": "1824303",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824584",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://namada-public-masp.shield-crypto.com",
+                            "status": "up",
                             "version": "1.2.1",
                             "is_up_to_date": true,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824285",
-=======
-                            "latest_block_height": "1824303",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824584",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-public-rpc.shield-crypto.com",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824286",
-=======
-                            "latest_block_height": "1824303",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824584",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -658,45 +548,37 @@
                     "team": "L0vd",
                     "discord": "jango_l0vd",
                     "url": "https://namadillo.l0vd.com",
+                    "status": "up",
                     "version": "1.19.0",
                     "is_up_to_date": true,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://namada-mainnet-indexer.rpc.l0vd.com:443",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824286",
-=======
-                            "latest_block_height": "1824304",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824585",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://namada-mainnet-masp-indexer.rpc.l0vd.com:443",
+                            "status": "up",
                             "version": "1.2.1",
                             "is_up_to_date": true,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824287",
-=======
-                            "latest_block_height": "1824304",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824585",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-mainnet.rpc.l0vd.com/",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824286",
-=======
-                            "latest_block_height": "1824304",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824585",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -704,33 +586,37 @@
                     "team": "Validatus",
                     "discord": "validatus.com",
                     "url": "https://namadillo.namada.validatus.com",
+                    "status": "up",
                     "version": "1.18.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://indexer.namada.validatus.com:443",
+                            "status": "down",
                             "version": "n/a",
                             "is_up_to_date": false,
                             "latest_block_height": "0",
-                            "status": "Down"
+                            "sync_state": "sync_nok"
                         },
                         {
                             "service": "masp",
                             "url": "https://masp.namada.validatus.com:443",
+                            "status": "down",
                             "version": "n/a",
                             "is_up_to_date": false,
                             "latest_block_height": "0",
-                            "status": "Down"
+                            "sync_state": "sync_nok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://rpc.namada.validatus.com:443",
+                            "status": "down",
                             "version": "n/a",
                             "is_up_to_date": false,
                             "namada_version": "n/a",
                             "latest_block_height": "0",
-                            "status": "Down"
+                            "sync_state": "sync_nok"
                         }
                     ]
                 },
@@ -738,45 +624,37 @@
                     "team": "OriginStake",
                     "discord": "mrspir",
                     "url": "https://app.namada.cc",
+                    "status": "up",
                     "version": "1.18.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com:443",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824292",
-=======
-                            "latest_block_height": "1824310",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824593",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://masp.namada.tududes.com:443",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824292",
-=======
-                            "latest_block_height": "1824309",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824593",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-mainnet-rpc.itrocket.net:443",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824292",
-=======
-                            "latest_block_height": "1824310",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824594",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -784,45 +662,37 @@
                     "team": "Grand Valley",
                     "discord": "baconvalley",
                     "url": "https://valley-of-namadillo.grandvalleys.com",
+                    "status": "up",
                     "version": "1.18.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://indexer-mainnet-namada.grandvalleys.com",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824292",
-=======
-                            "latest_block_height": "1824310",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824594",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://masp-indexer-mainnet-namada.grandvalleys.com",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824292",
-=======
-                            "latest_block_height": "1824310",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824593",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://lightnode-rpc-mainnet-namada.grandvalleys.com",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824293",
-=======
-                            "latest_block_height": "1824310",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824594",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -830,41 +700,37 @@
                     "team": "MurphyNode",
                     "discord": "lyeoeon",
                     "url": "https://namadillo.murphynode.net",
+                    "status": "up",
                     "version": "1.18.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://indexer.namada.murphynode.net",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824293",
-=======
-                            "latest_block_height": "1824310",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824594",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://masp-indexer.murphynode.net",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
                             "latest_block_height": "0",
-                            "status": "Down"
+                            "sync_state": "sync_nok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-rpc.murphynode.net",
+                            "status": "up",
                             "version": "0.37.11",
                             "is_up_to_date": false,
                             "namada_version": "1.1.1",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824293",
-=======
-                            "latest_block_height": "1824310",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824594",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -872,41 +738,37 @@
                     "team": "itrocket",
                     "discord": "itrocket",
                     "url": "https://namadillo.itrocket.net",
+                    "status": "up",
                     "version": "1.18.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://namada-mainnet-indexer.itrocket.net:443",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824293",
-=======
-                            "latest_block_height": "1824311",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824595",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://namada-masp-indexer.itrocket.net:443",
+                            "status": "up",
                             "version": "1.1.0",
                             "is_up_to_date": false,
                             "latest_block_height": "1687505",
-                            "status": "Down"
+                            "sync_state": "sync_nok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada-mainnet-rpc.itrocket.net:443",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824294",
-=======
-                            "latest_block_height": "1824311",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824595",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -914,33 +776,28 @@
                     "team": "LoserBoy",
                     "discord": "tonymarma",
                     "url": "https://interface.loserboy.xyz",
+                    "status": "up",
                     "version": "1.19.0",
                     "is_up_to_date": true,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824294",
-=======
-                            "latest_block_height": "1824311",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824596",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://namada.loserboy.xyz",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824294",
-=======
-                            "latest_block_height": "1824311",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824596",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -948,45 +805,37 @@
                     "team": "MekongLabs",
                     "discord": "nguyenthenguyen",
                     "url": "https://namadillo.pwa.mekonglabs.xyz",
+                    "status": "up",
                     "version": "1.18.0",
                     "is_up_to_date": false,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com:443",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824296",
-=======
-                            "latest_block_height": "1824312",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824597",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://masp.namada.tududes.com:443",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824296",
-=======
-                            "latest_block_height": "1824312",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824596",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://rpc.namada.tududes.com:443",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824296",
-=======
-                            "latest_block_height": "1824312",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824597",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -994,45 +843,37 @@
                     "team": "max-02",
                     "discord": "power542",
                     "url": "https://namadillo.net",
+                    "status": "up",
                     "version": "1.19.0",
                     "is_up_to_date": true,
                     "settings": [
                         {
                             "service": "indexer",
                             "url": "https://indexer.namada.tududes.com:443",
+                            "status": "up",
                             "version": "2.3.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824296",
-=======
-                            "latest_block_height": "1824313",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824597",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "masp",
                             "url": "https://masp.namada.tududes.com:443",
+                            "status": "up",
                             "version": "1.2.0",
                             "is_up_to_date": false,
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824296",
-=======
-                            "latest_block_height": "1824312",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824597",
+                            "sync_state": "sync_ok"
                         },
                         {
                             "service": "rpc",
                             "url": "https://rpc.namada.tududes.com:443",
+                            "status": "up",
                             "version": "0.37.15",
                             "is_up_to_date": true,
                             "namada_version": "1.1.5",
-<<<<<<< Updated upstream
-                            "latest_block_height": "1824296",
-=======
-                            "latest_block_height": "1824313",
->>>>>>> Stashed changes
-                            "status": "Healthy"
+                            "latest_block_height": "1824597",
+                            "sync_state": "sync_ok"
                         }
                     ]
                 },
@@ -1040,39 +881,10 @@
                     "team": "ValidatorVN",
                     "discord": "validatorvn",
                     "url": "https://namadillo.validatorvn.com",
+                    "status": "down",
                     "version": "n/a",
                     "is_up_to_date": false,
-<<<<<<< Updated upstream
-                    "settings": [
-                        {
-                            "service": "indexer",
-                            "url": "https://indexer.namada.tududes.com:443",
-                            "version": "2.3.0",
-                            "is_up_to_date": false,
-                            "latest_block_height": "1824297",
-                            "status": "Healthy"
-                        },
-                        {
-                            "service": "masp",
-                            "url": "https://masp.namada.tududes.com:443",
-                            "version": "1.2.0",
-                            "is_up_to_date": false,
-                            "latest_block_height": "1824297",
-                            "status": "Healthy"
-                        },
-                        {
-                            "service": "rpc",
-                            "url": "https://namada-mainnet-rpc.itrocket.net:443",
-                            "version": "0.37.15",
-                            "is_up_to_date": true,
-                            "namada_version": "1.1.5",
-                            "latest_block_height": "1824297",
-                            "status": "Healthy"
-                        }
-                    ]
-=======
                     "settings": []
->>>>>>> Stashed changes
                 }
             ]
         }
