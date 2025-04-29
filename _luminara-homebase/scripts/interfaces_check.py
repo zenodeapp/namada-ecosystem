@@ -161,7 +161,6 @@ def get_service_data(service, url):
             "url": url,
             "version": health_data.get("version", "n/a"),
             "is_up_to_date": False,
-            "namada_version": "n/a",
             "latest_block_height": str(block_data.get("block_height") or block_data.get("block") or "0")
         }
     return service_data
