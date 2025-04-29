@@ -117,34 +117,47 @@ def compare_versions(current, required):
             return (0, 0, 0)
     return version_tuple(current) >= version_tuple(required)
 
-def determine_status(block_height, reference_block, service_conf):
+def determine_sync_state(block_height, reference_block, service_conf):
     if not service_conf or reference_block == 0 or block_height == 0:
-        return "Down"
+        return "sync_nok"
     thresholds = service_conf.get("block_lag_thresholds", {})
     if not isinstance(thresholds, dict) or "healthy" not in thresholds or "max" not in thresholds:
-        return "Down"
+        return "sync_nok"
     try:
         healthy = int(thresholds["healthy"])
         max_lag = int(thresholds["max"])
         lag = reference_block - block_height
         if lag <= healthy:
-            return "Healthy"
+            return "sync_ok"
         elif lag <= max_lag:
-            return "Outdated"
-        return "Down"
+            return "sync_lag"
+        return "sync_nok"
     except (ValueError, TypeError):
-        return "Down"
+        return "sync_nok"
 
 def get_service_data(service, url):
     if not url or url == "n/a":
         return None
+        
     if service == "rpc":
         rpc_status = fetch_json(f"{url}/status")
+        if not rpc_status or "result" not in rpc_status:
+            return {
+                "service": service,
+                "url": url,
+                "status": "down",
+                "version": "n/a",
+                "is_up_to_date": False,
+                "namada_version": "n/a",
+                "latest_block_height": "0"
+            }
+            
         sync_info = rpc_status.get("result", {}).get("sync_info", {})
         node_info = rpc_status.get("result", {}).get("node_info", {})
         service_data = {
             "service": service,
             "url": url,
+            "status": "up",
             "version": node_info.get("version", "n/a"),
             "is_up_to_date": False,
             "namada_version": extract_moniker_version(node_info.get("moniker", "")),
@@ -155,14 +168,28 @@ def get_service_data(service, url):
             block_data = fetch_json(f"{url}/api/v1/chain/block/latest")
         else:
             block_data = fetch_json(f"{url}/api/v1/height")
+            
         health_data = fetch_json(f"{url}/health")
+        
+        if not block_data or not health_data:
+            return {
+                "service": service,
+                "url": url,
+                "status": "down",
+                "version": "n/a",
+                "is_up_to_date": False,
+                "latest_block_height": "0"
+            }
+            
         service_data = {
             "service": service,
             "url": url,
+            "status": "up",
             "version": health_data.get("version", "n/a"),
             "is_up_to_date": False,
             "latest_block_height": str(block_data.get("block_height") or block_data.get("block") or "0")
         }
+    
     return service_data
 
 # --- First pass: collect all data and block heights ---
@@ -203,6 +230,7 @@ for network, sources in INTERFACES.items():
             "team": interface.get("Team or Contributor Name", "Unknown"),
             "discord": interface.get("Discord UserName", "Unknown"),
             "url": interface_url,
+            "status": "up" if interface_version != "n/a" else "down",
             "version": interface_version,
             "is_up_to_date": compare_versions(interface_version, interface_required_version),
             "settings": settings
@@ -213,7 +241,7 @@ for network, sources in INTERFACES.items():
 # --- Calculate reference_latest_block_height ---
 reference_latest_block_height = max(all_block_heights) if all_block_heights else 0
 
-# --- Second pass: assign status and is_up_to_date using the reference height ---
+# --- Second pass: assign sync_state and is_up_to_date using the reference height ---
 output_data = {
     "script_start_time": START_TIME,
     "script_end_time": "",
@@ -236,7 +264,7 @@ for network, interfaces in network_data.items():
             except Exception:
                 height = 0
             service_conf = config_ref.get("services", {}).get(s["service"], {})
-            s["status"] = determine_status(height, reference_latest_block_height, service_conf)
+            s["sync_state"] = determine_sync_state(height, reference_latest_block_height, service_conf)
             s["is_up_to_date"] = compare_versions(s.get("version", "n/a"), service_conf.get("required_version", "n/a"))
         # Sort settings by service type
         interface["settings"] = sorted(interface["settings"], key=lambda x: x["service"])
