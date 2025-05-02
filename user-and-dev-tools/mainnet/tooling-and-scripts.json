@@ -70,5 +70,14 @@
     "Discord UserName": "power542",
     "GitHub Account": "maxpower-01",
     "Additional Note": "Lightweight and effortless status tracker for the Namada Ecosystem. It continuously monitors key components, with results stored in this repository."
+  },
+  {
+    "Tool Name": "namada-betterstack-monitoring",
+    "Short Description": "Monitoring whether a Namada Validator node is partecipating in consensus mechanism",
+    "Tool URL": "https://github.com/shield-crypto/namada-betterstack-monitoring",
+    "Team or Contributor Name": "shield-crypto",
+    "Discord UserName": "scaniashieldcrypto",
+    "GitHub Account": "shield-crypto",
+    "Additional Note": "A simple script that queries the instrumented Prometheus node and reports a successful heartbeat to BetterStack if the node continues signing new blocks."
   }
 ]
