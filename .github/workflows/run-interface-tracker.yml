@@ -21,11 +21,10 @@ jobs:
         run: python3 interfaces_tracker_github.py
 
       - name: Upload results
-        working-directory: _luminara-homebase
         uses: actions/upload-artifact@v4
         with:
           name: tracker-results
           path: |
-            state.json
-            changes.json
-            changes.sql
+            _luminara-homebase/state.json
+            _luminara-homebase/changes.json
+            _luminara-homebase/changes.sql
