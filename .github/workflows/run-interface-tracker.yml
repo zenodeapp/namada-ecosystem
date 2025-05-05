@@ -1,5 +1,8 @@
 name: Interface Tracker
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
   schedule:
@@ -20,11 +23,20 @@ jobs:
         working-directory: _luminara-homebase/scripts
         run: python3 interfaces_tracker.py
 
-      - name: Upload results
-        uses: actions/upload-artifact@v4
-        with:
-          name: tracker-results
-          path: |
-            _luminara-homebase/state.json
-            _luminara-homebase/changes.json
-            _luminara-homebase/changes.sql
+      - name: Commit & Push tracker results
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+
+          git stash || echo "ℹ️ Nothing to stash"
+          git pull --rebase origin ${{ github.ref_name }}
+          git stash pop || echo "ℹ️ Nothing to pop"
+
+          git add -f _luminara-homebase/state.json _luminara-homebase/changes.json _luminara-homebase/changes.sql
+
+          if git diff --cached --quiet; then
+            echo "✅ No changes to commit"
+          else
+            git commit -m "Update interface tracker results [skip ci]"
+            git push
+          fi
