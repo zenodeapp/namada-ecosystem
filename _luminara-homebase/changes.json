@@ -816,5 +816,100 @@
                 }
             ]
         }
+    },
+    {
+        "timestamp": "2025-05-05T13:26:30.848744+00:00Z",
+        "changes": [
+            {
+                "team": null,
+                "service": null,
+                "field": "script_end_time",
+                "full_path": "script_end_time",
+                "type": "modified",
+                "old_value": "2025-05-05T12:26:21.070861+00:00Z",
+                "new_value": "2025-05-05T13:06:18.637878+00:00Z"
+            },
+            {
+                "team": "itrocket",
+                "service": "indexer",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.itrocket.service.indexer.latest_block_height",
+                "type": "modified",
+                "old_value": "1889999",
+                "new_value": "1900624"
+            },
+            {
+                "team": "itrocket",
+                "service": "indexer",
+                "field": "sync_state",
+                "full_path": "namada.operator.itrocket.service.indexer.sync_state",
+                "type": "modified",
+                "old_value": "sync_nok",
+                "new_value": "sync_ok"
+            },
+            {
+                "team": "5ElementsNodes",
+                "service": "masp",
+                "field": "version",
+                "full_path": "namada.operator.5ElementsNodes.service.masp.version",
+                "type": "modified",
+                "old_value": "1.2.0",
+                "new_value": "1.2.1"
+            },
+            {
+                "team": "5ElementsNodes",
+                "service": "masp",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.5ElementsNodes.service.masp.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            },
+            {
+                "team": "Stake&Relax \ud83e\udda5",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.Stake&Relax \ud83e\udda5.interface.version",
+                "type": "modified",
+                "old_value": "n/a",
+                "new_value": "1.20.0"
+            },
+            {
+                "team": "Stake&Relax \ud83e\udda5",
+                "service": "interface",
+                "field": "status",
+                "full_path": "namada.operator.Stake&Relax \ud83e\udda5.interface.status",
+                "type": "modified",
+                "old_value": "down",
+                "new_value": "up"
+            },
+            {
+                "team": "Stake&Relax \ud83e\udda5",
+                "service": "interface",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.Stake&Relax \ud83e\udda5.interface.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "reference_latest_block_height",
+                "full_path": "reference_latest_block_height",
+                "type": "modified",
+                "old_value": "1900280",
+                "new_value": "1900625"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "script_start_time",
+                "full_path": "script_start_time",
+                "type": "modified",
+                "old_value": "2025-05-05T12:22:23.841503+00:00Z",
+                "new_value": "2025-05-05T13:02:56.436509+00:00Z"
+            }
+        ]
     }
 ]
