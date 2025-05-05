@@ -1,7 +1,7 @@
 {
   "namada": {
     "interface": {
-      "required_version": "1.19.0"
+      "required_version": "1.20.0"
     },
     "services": {
       "rpc": {
@@ -12,7 +12,7 @@
         }
       },
       "indexer": {
-        "required_version": "2.4.4",
+        "required_version": "2.5.2",
         "block_lag_thresholds": {
           "healthy": 50,
           "max": 150
