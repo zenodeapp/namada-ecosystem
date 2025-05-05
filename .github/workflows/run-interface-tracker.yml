@@ -6,7 +6,7 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *'  # every 2 hours
+    - cron: "*/30 * * * *"  # Every 30 minutes
 
 jobs:
   track-interfaces:
