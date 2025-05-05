@@ -106,6 +106,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                  (path[-1] == "settings" and isinstance(new_state[key], dict) and "service" in new_state[key]))):
                 for field, value in new_state[key].items():
                     field_path = current_path + [field]
+                    if field == "latest_block_height":
+                        continue
                     changes.append(create_change_record(
                         field_path,
                         "added",
@@ -114,6 +116,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                         root_state
                     ))
             else:
+                if key == "latest_block_height":
+                    continue
                 changes.append(create_change_record(
                     current_path,
                     "added",
@@ -128,6 +132,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                  (path[-1] == "settings" and isinstance(old_state[key], dict) and "service" in old_state[key]))):
                 for field, value in old_state[key].items():
                     field_path = current_path + [field]
+                    if field == "latest_block_height":
+                        continue
                     changes.append(create_change_record(
                         field_path,
                         "removed",
@@ -136,6 +142,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                         root_state
                     ))
             else:
+                if key == "latest_block_height":
+                    continue
                 changes.append(create_change_record(
                     current_path,
                     "removed",
@@ -153,6 +161,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                     root_state
                 ))
             elif old_state.get(key) != new_state[key]:
+                if key == "latest_block_height":
+                    continue
                 changes.append(create_change_record(
                     current_path,
                     "modified",
@@ -171,6 +181,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                             for service in value:
                                 service_name = service.get("service")
                                 for service_field, service_value in service.items():
+                                    if service_field == "latest_block_height":
+                                        continue
                                     field_path = path + ["team", team_name, "service", service_name, service_field]
                                     changes.append(create_change_record(
                                         field_path,
@@ -180,6 +192,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                                         root_state
                                     ))
                         else:
+                            if field == "latest_block_height":
+                                continue
                             field_path = path + ["team", team_name, field]
                             changes.append(create_change_record(
                                 field_path,
@@ -195,6 +209,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                             for service in value:
                                 service_name = service.get("service")
                                 for service_field, service_value in service.items():
+                                    if service_field == "latest_block_height":
+                                        continue
                                     field_path = path + ["team", team_name, "service", service_name, service_field]
                                     changes.append(create_change_record(
                                         field_path,
@@ -204,6 +220,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                                         root_state
                                     ))
                         else:
+                            if field == "latest_block_height":
+                                continue
                             field_path = path + ["team", team_name, field]
                             changes.append(create_change_record(
                                 field_path,
@@ -227,6 +245,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
             for service_name, service_data in old_services.items():
                 if service_name not in new_services:
                     for field, value in service_data.items():
+                        if field == "latest_block_height":
+                            continue
                         field_path = path + ["service", service_name, field]
                         changes.append(create_change_record(
                             field_path,
@@ -238,6 +258,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
             for service_name, service_data in new_services.items():
                 if service_name not in old_services:
                     for field, value in service_data.items():
+                        if field == "latest_block_height":
+                            continue
                         field_path = path + ["service", service_name, field]
                         changes.append(create_change_record(
                             field_path,
@@ -250,6 +272,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                 old_service = old_services[service_name]
                 new_service = new_services[service_name]
                 for field in set(old_service.keys()) | set(new_service.keys()):
+                    if field == "latest_block_height":
+                        continue
                     old_value = old_service.get(field)
                     new_value = new_service.get(field)
                     if old_value != new_value:
