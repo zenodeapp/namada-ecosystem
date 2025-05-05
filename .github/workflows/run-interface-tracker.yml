@@ -18,7 +18,7 @@ jobs:
 
       - name: Run interface tracker
         working-directory: _luminara-homebase/scripts
-        run: python3 interfaces_tracker_github.py
+        run: python3 interfaces_tracker.py
 
       - name: Upload results
         uses: actions/upload-artifact@v4
