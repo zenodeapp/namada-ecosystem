@@ -271,12 +271,13 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
             for service_name in old_services.keys() & new_services.keys():
                 old_service = old_services[service_name]
                 new_service = new_services[service_name]
+                sync_state_changed = old_service.get("sync_state") != new_service.get("sync_state")
                 for field in set(old_service.keys()) | set(new_service.keys()):
-                    if field == "latest_block_height":
-                        continue
                     old_value = old_service.get(field)
                     new_value = new_service.get(field)
                     if old_value != new_value:
+                        if field == "latest_block_height" and not sync_state_changed:
+                            continue  # Only log block height if sync_state also changed
                         field_path = path + ["service", service_name, field]
                         changes.append(create_change_record(
                             field_path,
