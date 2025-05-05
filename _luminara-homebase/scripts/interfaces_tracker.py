@@ -12,6 +12,13 @@ STATE_PATH = os.path.join(BASE_PATH, "state.json")
 CHANGES_JSON_PATH = os.path.join(BASE_PATH, "changes.json")
 CHANGES_SQL_PATH = os.path.join(BASE_PATH, "changes.sql")
 
+IGNORED_FIELDS = {
+    "latest_block_height",  # handled specially in settings
+    "script_start_time",
+    "script_end_time",
+    "reference_latest_block_height"
+}
+
 def load_json_file(path: str) -> dict:
     try:
         with open(path, 'r', encoding='utf-8') as f:
@@ -100,14 +107,16 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
         old_keys = set(old_state.keys() if isinstance(old_state, dict) else [])
         new_keys = set(new_state.keys())
         for key in new_keys - old_keys:
+            if key in IGNORED_FIELDS:
+                continue
             current_path = path + [key]
             if (len(path) >= 2 and path[0] == "networks" and
                 ((path[-1] == "interface" and isinstance(new_state[key], dict) and "team" in new_state[key]) or
                  (path[-1] == "settings" and isinstance(new_state[key], dict) and "service" in new_state[key]))):
                 for field, value in new_state[key].items():
-                    field_path = current_path + [field]
-                    if field == "latest_block_height":
+                    if field in IGNORED_FIELDS:
                         continue
+                    field_path = current_path + [field]
                     changes.append(create_change_record(
                         field_path,
                         "added",
@@ -116,8 +125,6 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                         root_state
                     ))
             else:
-                if key == "latest_block_height":
-                    continue
                 changes.append(create_change_record(
                     current_path,
                     "added",
@@ -126,14 +133,16 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                     root_state
                 ))
         for key in old_keys - new_keys:
+            if key in IGNORED_FIELDS:
+                continue
             current_path = path + [key]
             if (len(path) >= 2 and path[0] == "networks" and
                 ((path[-1] == "interface" and isinstance(old_state[key], dict) and "team" in old_state[key]) or
                  (path[-1] == "settings" and isinstance(old_state[key], dict) and "service" in old_state[key]))):
                 for field, value in old_state[key].items():
-                    field_path = current_path + [field]
-                    if field == "latest_block_height":
+                    if field in IGNORED_FIELDS:
                         continue
+                    field_path = current_path + [field]
                     changes.append(create_change_record(
                         field_path,
                         "removed",
@@ -142,8 +151,6 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                         root_state
                     ))
             else:
-                if key == "latest_block_height":
-                    continue
                 changes.append(create_change_record(
                     current_path,
                     "removed",
@@ -152,6 +159,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                     root_state
                 ))
         for key in old_keys & new_keys:
+            if key in IGNORED_FIELDS:
+                continue
             current_path = path + [key]
             if isinstance(new_state[key], (dict, list)):
                 changes.extend(detect_changes(
@@ -161,8 +170,6 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                     root_state
                 ))
             elif old_state.get(key) != new_state[key]:
-                if key == "latest_block_height":
-                    continue
                 changes.append(create_change_record(
                     current_path,
                     "modified",
@@ -177,11 +184,13 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
             for team_name, team_data in old_teams.items():
                 if team_name not in new_teams:
                     for field, value in team_data.items():
+                        if field in IGNORED_FIELDS:
+                            continue
                         if field == "settings":
                             for service in value:
                                 service_name = service.get("service")
                                 for service_field, service_value in service.items():
-                                    if service_field == "latest_block_height":
+                                    if service_field in IGNORED_FIELDS:
                                         continue
                                     field_path = path + ["team", team_name, "service", service_name, service_field]
                                     changes.append(create_change_record(
@@ -192,8 +201,6 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                                         root_state
                                     ))
                         else:
-                            if field == "latest_block_height":
-                                continue
                             field_path = path + ["team", team_name, field]
                             changes.append(create_change_record(
                                 field_path,
@@ -205,11 +212,13 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
             for team_name, team_data in new_teams.items():
                 if team_name not in old_teams:
                     for field, value in team_data.items():
+                        if field in IGNORED_FIELDS:
+                            continue
                         if field == "settings":
                             for service in value:
                                 service_name = service.get("service")
                                 for service_field, service_value in service.items():
-                                    if service_field == "latest_block_height":
+                                    if service_field in IGNORED_FIELDS:
                                         continue
                                     field_path = path + ["team", team_name, "service", service_name, service_field]
                                     changes.append(create_change_record(
@@ -220,8 +229,6 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                                         root_state
                                     ))
                         else:
-                            if field == "latest_block_height":
-                                continue
                             field_path = path + ["team", team_name, field]
                             changes.append(create_change_record(
                                 field_path,
@@ -245,7 +252,7 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
             for service_name, service_data in old_services.items():
                 if service_name not in new_services:
                     for field, value in service_data.items():
-                        if field == "latest_block_height":
+                        if field in IGNORED_FIELDS:
                             continue
                         field_path = path + ["service", service_name, field]
                         changes.append(create_change_record(
@@ -258,7 +265,7 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
             for service_name, service_data in new_services.items():
                 if service_name not in old_services:
                     for field, value in service_data.items():
-                        if field == "latest_block_height":
+                        if field in IGNORED_FIELDS:
                             continue
                         field_path = path + ["service", service_name, field]
                         changes.append(create_change_record(
@@ -273,6 +280,8 @@ def detect_changes(old_state: dict, new_state: dict, path: List[str] = None, roo
                 new_service = new_services[service_name]
                 sync_state_changed = old_service.get("sync_state") != new_service.get("sync_state")
                 for field in set(old_service.keys()) | set(new_service.keys()):
+                    if field in IGNORED_FIELDS and field != "latest_block_height":
+                        continue
                     old_value = old_service.get(field)
                     new_value = new_service.get(field)
                     if old_value != new_value:
