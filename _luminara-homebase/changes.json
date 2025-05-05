@@ -845,5 +845,424 @@
                 }
             ]
         }
+    },
+    {
+        "timestamp": "2025-05-05T11:13:06.356407+00:00Z",
+        "changes": [
+            {
+                "team": "Nodes.Guru",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Nodes.Guru.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899151",
+                "new_value": "1899410"
+            },
+            {
+                "team": "Nodes.Guru",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Nodes.Guru.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899150",
+                "new_value": "1899409"
+            },
+            {
+                "team": "Hadesguard",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Hadesguard.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899138",
+                "new_value": "1899397"
+            },
+            {
+                "team": "Hadesguard",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Hadesguard.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899137",
+                "new_value": "1899396"
+            },
+            {
+                "team": "Grand Valley",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Grand Valley.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899154",
+                "new_value": "1899413"
+            },
+            {
+                "team": "Grand Valley",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Grand Valley.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899154",
+                "new_value": "1899414"
+            },
+            {
+                "team": "StakeUp",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.StakeUp.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899142",
+                "new_value": "1899401"
+            },
+            {
+                "team": "StakeUp",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.StakeUp.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899142",
+                "new_value": "1899401"
+            },
+            {
+                "team": "deNodes",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.deNodes.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899140",
+                "new_value": "1899399"
+            },
+            {
+                "team": "deNodes",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.deNodes.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899140",
+                "new_value": "1899399"
+            },
+            {
+                "team": "L0vd",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.L0vd.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899152",
+                "new_value": "1899411"
+            },
+            {
+                "team": "L0vd",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.L0vd.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899152",
+                "new_value": "1899411"
+            },
+            {
+                "team": "LoserBoy",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.LoserBoy.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899161",
+                "new_value": "1899421"
+            },
+            {
+                "team": "LoserBoy",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.LoserBoy.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899161",
+                "new_value": "1899421"
+            },
+            {
+                "team": "Citizen Web3",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Citizen Web3.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899143",
+                "new_value": "1899402"
+            },
+            {
+                "team": "OriginStake",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.OriginStake.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899154",
+                "new_value": "1899413"
+            },
+            {
+                "team": "OriginStake",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.OriginStake.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899154",
+                "new_value": "1899413"
+            },
+            {
+                "team": "EmberStake",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.EmberStake.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899150",
+                "new_value": "1899409"
+            },
+            {
+                "team": "EmberStake",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.EmberStake.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899150",
+                "new_value": "1899409"
+            },
+            {
+                "team": "MELLIFERA",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.MELLIFERA.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899139",
+                "new_value": "1899399"
+            },
+            {
+                "team": "CroutonDigital",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.CroutonDigital.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899148",
+                "new_value": "1899408"
+            },
+            {
+                "team": "CroutonDigital",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.CroutonDigital.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899149",
+                "new_value": "1899408"
+            },
+            {
+                "team": "Validatus",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Validatus.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899153",
+                "new_value": "1899412"
+            },
+            {
+                "team": "Validatus",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Validatus.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "852854",
+                "new_value": "861798"
+            },
+            {
+                "team": "itrocket",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.itrocket.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899161",
+                "new_value": "1899421"
+            },
+            {
+                "team": "itrocket",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.itrocket.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899161",
+                "new_value": "1899420"
+            },
+            {
+                "team": "Palamar",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Palamar.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899141",
+                "new_value": "1899400"
+            },
+            {
+                "team": "Palamar",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Palamar.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1618935",
+                "new_value": "1653070"
+            },
+            {
+                "team": "5ElementsNodes",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.5ElementsNodes.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899137",
+                "new_value": "1899396"
+            },
+            {
+                "team": "5ElementsNodes",
+                "service": "masp",
+                "field": "version",
+                "full_path": "namada.operator.5ElementsNodes.service.masp.version",
+                "type": "modified",
+                "old_value": "1.2.0",
+                "new_value": "1.2.1"
+            },
+            {
+                "team": "5ElementsNodes",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.5ElementsNodes.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899137",
+                "new_value": "1899396"
+            },
+            {
+                "team": "5ElementsNodes",
+                "service": "masp",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.5ElementsNodes.service.masp.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            },
+            {
+                "team": "TuDudes",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.TuDudes.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899136",
+                "new_value": "1899395"
+            },
+            {
+                "team": "TuDudes",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.TuDudes.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899136",
+                "new_value": "1899395"
+            },
+            {
+                "team": "MekongLabs",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.MekongLabs.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899162",
+                "new_value": "1899422"
+            },
+            {
+                "team": "MekongLabs",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.MekongLabs.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899162",
+                "new_value": "1899421"
+            },
+            {
+                "team": "shield-crypto",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.shield-crypto.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899152",
+                "new_value": "1899410"
+            },
+            {
+                "team": "shield-crypto",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.shield-crypto.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899151",
+                "new_value": "1899410"
+            },
+            {
+                "team": "Stake&Relax \ud83e\udda5",
+                "service": "indexer",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Stake&Relax \ud83e\udda5.service.indexer.latest_block_height",
+                "type": "modified",
+                "old_value": "1899147",
+                "new_value": "1899406"
+            },
+            {
+                "team": "Stake&Relax \ud83e\udda5",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Stake&Relax \ud83e\udda5.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899147",
+                "new_value": "1899406"
+            },
+            {
+                "team": "Stake&Relax \ud83e\udda5",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Stake&Relax \ud83e\udda5.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899147",
+                "new_value": "1899406"
+            },
+            {
+                "team": "Sproutstake",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Sproutstake.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "1899138",
+                "new_value": "1899397"
+            },
+            {
+                "team": "Sproutstake",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Sproutstake.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1899138",
+                "new_value": "1899398"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "script_end_time",
+                "full_path": "script_end_time",
+                "type": "modified",
+                "old_value": "2025-05-05T10:16:39.547793+00:00Z",
+                "new_value": "2025-05-05T10:46:46.538726+00:00Z"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "script_start_time",
+                "full_path": "script_start_time",
+                "type": "modified",
+                "old_value": "2025-05-05T10:13:07.347765+00:00Z",
+                "new_value": "2025-05-05T10:43:08.919632+00:00Z"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "reference_latest_block_height",
+                "full_path": "reference_latest_block_height",
+                "type": "modified",
+                "old_value": "1899162",
+                "new_value": "1899422"
+            }
+        ]
     }
 ]
