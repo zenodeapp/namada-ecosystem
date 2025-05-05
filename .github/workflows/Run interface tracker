@@ -1,0 +1,29 @@
+name: Interface Tracker
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */2 * * *'  # every 2 hours
+
+jobs:
+  track-interfaces:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: _luminara-homebase/scripts
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+      - name: Run interface tracker
+        run: python3 interfaces_tracker.py
+      - name: Upload results
+        uses: actions/upload-artifact@v3
+        with:
+          name: tracker-results
+          path: |
+            ../state.json
+            ../changes.json
+            ../changes.sql
