@@ -20,7 +20,7 @@ jobs:
       - name: Run interface tracker
         run: python3 interfaces_tracker.py
       - name: Upload results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: tracker-results
           path: |
