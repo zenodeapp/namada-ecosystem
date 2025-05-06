@@ -4059,5 +4059,28 @@
                 "new_value": "2.5.3"
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-06T11:13:16.882944+00:00Z",
+        "changes": [
+            {
+                "team": "Nodes.Guru",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.Nodes.Guru.service.indexer.version",
+                "type": "modified",
+                "old_value": "2.5.2",
+                "new_value": "n/a"
+            },
+            {
+                "team": "Nodes.Guru",
+                "service": "indexer",
+                "field": "status",
+                "full_path": "namada.operator.Nodes.Guru.service.indexer.status",
+                "type": "modified",
+                "old_value": "up",
+                "new_value": "down"
+            }
+        ]
     }
 ]
