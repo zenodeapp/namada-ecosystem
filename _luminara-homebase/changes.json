@@ -5011,5 +5011,64 @@
                 "new_value": "sync_ok"
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-07T16:20:33.330883+00:00Z",
+        "changes": [
+            {
+                "team": "ValidatorVN",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.ValidatorVN.service.indexer.version",
+                "type": "modified",
+                "old_value": "2.5.3",
+                "new_value": "2.5.4"
+            },
+            {
+                "team": "Hadesguard",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.Hadesguard.service.indexer.version",
+                "type": "modified",
+                "old_value": "2.5.3",
+                "new_value": "2.5.4"
+            },
+            {
+                "team": "LoserBoy",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.LoserBoy.service.indexer.version",
+                "type": "modified",
+                "old_value": "2.5.3",
+                "new_value": "2.5.4"
+            },
+            {
+                "team": "OriginStake",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.OriginStake.service.indexer.version",
+                "type": "modified",
+                "old_value": "2.5.3",
+                "new_value": "2.5.4"
+            },
+            {
+                "team": "TuDudes",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.TuDudes.service.indexer.version",
+                "type": "modified",
+                "old_value": "2.5.3",
+                "new_value": "2.5.4"
+            },
+            {
+                "team": "MekongLabs",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.MekongLabs.service.indexer.version",
+                "type": "modified",
+                "old_value": "2.5.3",
+                "new_value": "2.5.4"
+            }
+        ]
     }
 ]
