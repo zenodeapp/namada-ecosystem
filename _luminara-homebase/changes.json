@@ -5252,5 +5252,28 @@
                 "new_value": "1934936"
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-08T08:21:09.072553+00:00Z",
+        "changes": [
+            {
+                "team": "5ElementsNodes",
+                "service": "masp",
+                "field": "version",
+                "full_path": "namada.operator.5ElementsNodes.service.masp.version",
+                "type": "modified",
+                "old_value": "1.2.0",
+                "new_value": "1.2.1"
+            },
+            {
+                "team": "5ElementsNodes",
+                "service": "masp",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.5ElementsNodes.service.masp.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            }
+        ]
     }
 ]
