@@ -5477,5 +5477,46 @@
                 "new_value": false
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-09T02:54:35.004314+00:00Z",
+        "changes": [
+            {
+                "team": "5ElementsNodes",
+                "service": "masp",
+                "field": "version",
+                "full_path": "namada.operator.5ElementsNodes.service.masp.version",
+                "type": "modified",
+                "old_value": "1.2.0",
+                "new_value": "1.2.1"
+            },
+            {
+                "team": "5ElementsNodes",
+                "service": "masp",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.5ElementsNodes.service.masp.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            },
+            {
+                "team": "Validatus",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Validatus.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "1930001",
+                "new_value": "1945027"
+            },
+            {
+                "team": "Validatus",
+                "service": "masp",
+                "field": "sync_state",
+                "full_path": "namada.operator.Validatus.service.masp.sync_state",
+                "type": "modified",
+                "old_value": "sync_nok",
+                "new_value": "sync_ok"
+            }
+        ]
     }
 ]
