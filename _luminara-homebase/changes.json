@@ -6536,5 +6536,37 @@
                 "new_value": "sync_nok"
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-10T17:12:25.740043+00:00Z",
+        "changes": [
+            {
+                "team": "Validatus",
+                "service": "indexer",
+                "field": "status",
+                "full_path": "namada.operator.Validatus.service.indexer.status",
+                "type": "modified",
+                "old_value": "down",
+                "new_value": "up"
+            },
+            {
+                "team": "Validatus",
+                "service": "indexer",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.Validatus.service.indexer.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            },
+            {
+                "team": "Validatus",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.Validatus.service.indexer.version",
+                "type": "modified",
+                "old_value": "n/a",
+                "new_value": "3.0.1"
+            }
+        ]
     }
 ]
