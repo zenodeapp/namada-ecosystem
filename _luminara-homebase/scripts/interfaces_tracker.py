@@ -12,12 +12,23 @@ STATE_PATH = os.path.join(BASE_PATH, "state.json")
 CHANGES_JSON_PATH = os.path.join(BASE_PATH, "changes.json")
 CHANGES_SQL_PATH = os.path.join(BASE_PATH, "changes.sql")
 
+# Set which networks to track. Example: ["namada"] or ["namada", "housefire"]
+TRACKED_NETWORKS = ["namada"]  # Only mainnet by default
+# To enable housefire, use: TRACKED_NETWORKS = ["namada", "housefire"]
+
 IGNORED_FIELDS = {
     "latest_block_height",  # handled specially in settings
     "script_start_time",
     "script_end_time",
     "reference_latest_block_height"
 }
+
+def filter_networks(state: dict, networks: list) -> dict:
+    if state and "networks" in state:
+        filtered = [n for n in state["networks"] if n.get("network") in networks]
+        state = dict(state)  # shallow copy
+        state["networks"] = filtered
+    return state
 
 def load_json_file(path: str) -> dict:
     try:
@@ -345,6 +356,11 @@ def main():
         return
     previous_state = load_json_file(STATE_PATH)
     is_initial = not previous_state
+
+    # Filter networks based on TRACKED_NETWORKS
+    current_state = filter_networks(current_state, TRACKED_NETWORKS)
+    previous_state = filter_networks(previous_state, TRACKED_NETWORKS) if previous_state else previous_state
+
     if is_initial:
         print("Initial run detected - recording complete state")
         changes = [{
