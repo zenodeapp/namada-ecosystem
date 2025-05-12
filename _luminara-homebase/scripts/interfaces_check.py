@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 START_TIME = datetime.now(UTC).isoformat() + "Z"
 
 # Enable / Disable Housefire
-ENABLE_HOUSEFIRE = False
+ENABLE_HOUSEFIRE = True
 
 # Paths
 BASE_PATH = "_luminara-homebase"
