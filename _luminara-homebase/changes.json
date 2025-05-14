@@ -10415,5 +10415,64 @@
                 "new_value": true
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-14T16:19:41.989971+00:00Z",
+        "changes": [
+            {
+                "team": "MELLIFERA",
+                "service": "masp",
+                "field": "status",
+                "full_path": "namada.operator.MELLIFERA.service.masp.status",
+                "type": "modified",
+                "old_value": "down",
+                "new_value": "up"
+            },
+            {
+                "team": "MELLIFERA",
+                "service": "masp",
+                "field": "sync_state",
+                "full_path": "namada.operator.MELLIFERA.service.masp.sync_state",
+                "type": "modified",
+                "old_value": "sync_nok",
+                "new_value": "sync_ok"
+            },
+            {
+                "team": "MELLIFERA",
+                "service": "masp",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.MELLIFERA.service.masp.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            },
+            {
+                "team": "MELLIFERA",
+                "service": "masp",
+                "field": "url",
+                "full_path": "namada.operator.MELLIFERA.service.masp.url",
+                "type": "modified",
+                "old_value": "https://namada-mainnet-masp.mellifera.network",
+                "new_value": "https://masp.namada.tududes.com"
+            },
+            {
+                "team": "MELLIFERA",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.MELLIFERA.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "0",
+                "new_value": "2014443"
+            },
+            {
+                "team": "MELLIFERA",
+                "service": "masp",
+                "field": "version",
+                "full_path": "namada.operator.MELLIFERA.service.masp.version",
+                "type": "modified",
+                "old_value": "n/a",
+                "new_value": "1.2.1"
+            }
+        ]
     }
 ]
