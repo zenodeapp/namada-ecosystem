@@ -10474,5 +10474,19 @@
                 "new_value": "1.2.1"
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-14T17:13:55.799630+00:00Z",
+        "changes": [
+            {
+                "team": "MELLIFERA",
+                "service": "masp",
+                "field": "url",
+                "full_path": "namada.operator.MELLIFERA.service.masp.url",
+                "type": "modified",
+                "old_value": "https://masp.namada.tududes.com",
+                "new_value": "https://namada-mainnet-masp.mellifera.network"
+            }
+        ]
     }
 ]
