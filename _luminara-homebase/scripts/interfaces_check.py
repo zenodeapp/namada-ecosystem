@@ -80,7 +80,7 @@ def get_interface_version(url):
         if script and "src" in script.attrs:
             js_url = f"{url.rstrip('/')}/{script['src'].lstrip('/')}"
             js_content = fetch_url(js_url)
-            if js_content and (match := re.search(r'version\$1\s*=\s*"([\d.]+)"', js_content)):
+            if js_content and (match := re.search(r'version\$1\s*=\s*"([^"]+)"', js_content)):
                 return match.group(1)
     except Exception as e:
         print(f"Error getting interface version from {url}: {e}")
