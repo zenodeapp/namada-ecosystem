@@ -13370,5 +13370,55 @@
                 "new_value": true
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-18T19:11:49.011403+00:00Z",
+        "changes": [
+            {
+                "team": "OriginStake",
+                "service": "rpc",
+                "field": "sync_state",
+                "full_path": "namada.operator.OriginStake.service.rpc.sync_state",
+                "type": "modified",
+                "old_value": "sync_ok",
+                "new_value": "sync_nok"
+            },
+            {
+                "team": "itrocket",
+                "service": "masp",
+                "field": "sync_state",
+                "full_path": "namada.operator.itrocket.service.masp.sync_state",
+                "type": "modified",
+                "old_value": "sync_ok",
+                "new_value": "sync_nok"
+            },
+            {
+                "team": "itrocket",
+                "service": "rpc",
+                "field": "sync_state",
+                "full_path": "namada.operator.itrocket.service.rpc.sync_state",
+                "type": "modified",
+                "old_value": "sync_ok",
+                "new_value": "sync_nok"
+            },
+            {
+                "team": "itrocket",
+                "service": "indexer",
+                "field": "sync_state",
+                "full_path": "namada.operator.itrocket.service.indexer.sync_state",
+                "type": "modified",
+                "old_value": "sync_ok",
+                "new_value": "sync_nok"
+            },
+            {
+                "team": "ValidatorVN",
+                "service": "rpc",
+                "field": "sync_state",
+                "full_path": "namada.operator.ValidatorVN.service.rpc.sync_state",
+                "type": "modified",
+                "old_value": "sync_ok",
+                "new_value": "sync_nok"
+            }
+        ]
     }
 ]
