@@ -80,7 +80,7 @@ def get_interface_version(url):
         if script and "src" in script.attrs:
             js_url = f"{url.rstrip('/')}/{script['src'].lstrip('/')}"
             js_content = fetch_url(js_url)
-            if js_content and (match := re.search(r'version\$1\s*=\s*"([\d.]+)"', js_content)):
+            if js_content and (match := re.search(r'version\$1\s*=\s*"([^"]+)"', js_content)):
                 return match.group(1)
     except Exception as e:
         print(f"Error getting interface version from {url}: {e}")
@@ -107,15 +107,20 @@ def extract_moniker_version(moniker):
     match = re.search(r"[-_]v(\d+\.\d+\.\d+)", moniker)
     return match.group(1) if match else "n/a"
 
+def version_tuple(v):
+    main, *rest = v.split('-', 1)
+    nums = tuple(map(int, main.split('.')))
+    suffix = rest[0] if rest else ''
+    return nums, suffix
+
 def compare_versions(current, required):
     if current == "n/a" or required == "n/a":
         return False
-    def version_tuple(v):
-        try:
-            return tuple(map(int, v.split('.')))
-        except (ValueError, AttributeError):
-            return (0, 0, 0)
-    return version_tuple(current) >= version_tuple(required)
+    c_nums, c_suf = version_tuple(current)
+    r_nums, r_suf = version_tuple(required)
+    if c_nums != r_nums:
+        return c_nums > r_nums
+    return c_suf >= r_suf
 
 def determine_sync_state(block_height, reference_block, service_conf):
     if not service_conf or reference_block == 0 or block_height == 0:
