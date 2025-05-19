@@ -14276,5 +14276,64 @@
                 "new_value": "2075181"
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-19T16:20:08.396735+00:00Z",
+        "changes": [
+            {
+                "team": "5ElementsNodes",
+                "service": "masp",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.5ElementsNodes.service.masp.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            },
+            {
+                "team": "5ElementsNodes",
+                "service": "masp",
+                "field": "version",
+                "full_path": "namada.operator.5ElementsNodes.service.masp.version",
+                "type": "modified",
+                "old_value": "1.2.0",
+                "new_value": "1.2.1"
+            },
+            {
+                "team": "Citizen Web3",
+                "service": "indexer",
+                "field": "status",
+                "full_path": "namada.operator.Citizen Web3.service.indexer.status",
+                "type": "modified",
+                "old_value": "down",
+                "new_value": "up"
+            },
+            {
+                "team": "Citizen Web3",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.Citizen Web3.service.indexer.version",
+                "type": "modified",
+                "old_value": "n/a",
+                "new_value": "2.5.3"
+            },
+            {
+                "team": "Citizen Web3",
+                "service": "masp",
+                "field": "status",
+                "full_path": "namada.operator.Citizen Web3.service.masp.status",
+                "type": "modified",
+                "old_value": "down",
+                "new_value": "up"
+            },
+            {
+                "team": "Citizen Web3",
+                "service": "masp",
+                "field": "version",
+                "full_path": "namada.operator.Citizen Web3.service.masp.version",
+                "type": "modified",
+                "old_value": "n/a",
+                "new_value": "1.2.0"
+            }
+        ]
     }
 ]
