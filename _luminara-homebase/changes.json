@@ -14427,5 +14427,37 @@
                 "new_value": false
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-20T06:23:28.231771+00:00Z",
+        "changes": [
+            {
+                "team": "itrocket",
+                "service": "masp",
+                "field": "version",
+                "full_path": "namada.operator.itrocket.service.masp.version",
+                "type": "modified",
+                "old_value": "1.1.0",
+                "new_value": "1.3.0"
+            },
+            {
+                "team": "itrocket",
+                "service": "masp",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.itrocket.service.masp.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            },
+            {
+                "team": "itrocket",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.itrocket.service.indexer.version",
+                "type": "modified",
+                "old_value": "3.0.1",
+                "new_value": "3.0.2"
+            }
+        ]
     }
 ]
