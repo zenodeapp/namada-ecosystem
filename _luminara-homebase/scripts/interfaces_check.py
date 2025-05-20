@@ -118,9 +118,7 @@ def compare_versions(current, required):
         return False
     c_nums, c_suf = version_tuple(current)
     r_nums, r_suf = version_tuple(required)
-    if c_nums != r_nums:
-        return c_nums > r_nums
-    return c_suf >= r_suf
+    return c_nums == r_nums and c_suf == r_suf
 
 def determine_sync_state(block_height, reference_block, service_conf):
     if not service_conf or reference_block == 0 or block_height == 0:
