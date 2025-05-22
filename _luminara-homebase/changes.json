@@ -17583,5 +17583,28 @@
                 "new_value": false
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-22T08:21:13.052890+00:00Z",
+        "changes": [
+            {
+                "team": "Validatus",
+                "service": "interface",
+                "field": "status",
+                "full_path": "namada.operator.Validatus.interface.status",
+                "type": "modified",
+                "old_value": "down",
+                "new_value": "up"
+            },
+            {
+                "team": "Validatus",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.Validatus.interface.version",
+                "type": "modified",
+                "old_value": "n/a",
+                "new_value": "1.20.2"
+            }
+        ]
     }
 ]
