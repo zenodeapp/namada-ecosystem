@@ -20644,5 +20644,28 @@
                 "new_value": "sync_ok"
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-25T19:11:45.253770+00:00Z",
+        "changes": [
+            {
+                "team": "shield-crypto",
+                "service": "interface",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.shield-crypto.interface.is_up_to_date",
+                "type": "modified",
+                "old_value": true,
+                "new_value": false
+            },
+            {
+                "team": "shield-crypto",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.shield-crypto.interface.version",
+                "type": "modified",
+                "old_value": "1.20.0-hotfix3",
+                "new_value": "1.20.0-hotfix4"
+            }
+        ]
     }
 ]
