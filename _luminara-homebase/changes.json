@@ -29717,5 +29717,46 @@
                 "new_value": "2188350"
             }
         ]
+    },
+    {
+        "timestamp": "2025-05-28T18:21:08.216935+00:00Z",
+        "changes": [
+            {
+                "team": "Sproutstake",
+                "service": "masp",
+                "field": "sync_state",
+                "full_path": "namada.operator.Sproutstake.service.masp.sync_state",
+                "type": "modified",
+                "old_value": "sync_nok",
+                "new_value": "sync_ok"
+            },
+            {
+                "team": "Sproutstake",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Sproutstake.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "2118186",
+                "new_value": "2189404"
+            },
+            {
+                "team": "CroutonDigital",
+                "service": "masp",
+                "field": "sync_state",
+                "full_path": "namada.operator.CroutonDigital.service.masp.sync_state",
+                "type": "modified",
+                "old_value": "sync_nok",
+                "new_value": "sync_ok"
+            },
+            {
+                "team": "CroutonDigital",
+                "service": "masp",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.CroutonDigital.service.masp.latest_block_height",
+                "type": "modified",
+                "old_value": "2021425",
+                "new_value": "2189409"
+            }
+        ]
     }
 ]
