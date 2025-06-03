@@ -36296,5 +36296,37 @@
                 "new_value": "sync_ok"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-03T19:12:41.006392+00:00Z",
+        "changes": [
+            {
+                "team": "OriginStake",
+                "service": "interface",
+                "field": "status",
+                "full_path": "namada.operator.OriginStake.interface.status",
+                "type": "modified",
+                "old_value": "down",
+                "new_value": "up"
+            },
+            {
+                "team": "OriginStake",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.OriginStake.interface.version",
+                "type": "modified",
+                "old_value": "n/a",
+                "new_value": "1.21.0"
+            },
+            {
+                "team": "OriginStake",
+                "service": "interface",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.OriginStake.interface.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            }
+        ]
     }
 ]
