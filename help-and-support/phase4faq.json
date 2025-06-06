@@ -1,7 +1,23 @@
 {
   "faq": [
     {
+      "id": 0,
+      "question": "Why so many addresses!? What are they?",
+      "answer": "Your tnam (transparent address) is publicly known, so staking, voting, tnam to tnam transfers, and anything else done with it can be openly seen and potentially attributed to you. Only transfers can be shielded.<br>Your znam (shielded address) can be shared to receive payments. Transfers between znam only reveal transaction details to the sender/receiver involved. Sharing your “viewing key” lets anyone with the viewing key see these details.",
+      "images": [],
+      "tags": ["address", "transparent", "shielded"],
+      "last_updated": "2025-06-05"
+    },
+    {
       "id": 1,
+      "question": "What is a private key?",
+      "answer": "Your private key is usually represented as a 'seed phrase' or 'mnemonic phrase'. It's a list of 12 (or 24) words that give the holder complete control of your address. Lose this, and you will lose your funds irrevocably.<br>Using a hardware wallet device provides strong protection against this. <a href="https://namada.net/blog/namada-is-now-available-on-ledger" target="_blank">Namada supports Ledger hardware wallets</a> (with more to come!)",
+      "images": [],
+      "tags": ["seed", "private", "mnemonic", "phrase"],
+      "last_updated": "2025-06-05"
+    },
+    {
+      "id": 2,
       "question": "How do I get or send NAM tokens?",
       "answer": "You can transfer any supported IBC token, but you can't get or send NAM tokens until a governance proposal enables transfers (this will be Phase 5).",
       "images": [],
@@ -9,8 +25,8 @@
       "last_updated": "2025-05-26"
     },
     {
-      "id": 2,
-      "question": "How can I pay for transaction fees if I can't get NAM? 🫠",
+      "id": 3,
+      "question": "How can I pay for transaction fees if I can't get NAM?",
       "answer": "Any IBC token supported by Namada can be used to pay transaction fees. Look for Fee Options (ɪɴ sᴍᴀʟʟ ꜰᴏɴᴛ) and click NAM (or ATOM, etc).",
       "images": [
         "https://github.com/user-attachments/assets/e3c752a0-c47c-4832-9c45-bfff3609b6e4",
@@ -20,7 +36,7 @@
       "last_updated": "2025-05-26"
     },
     {
-      "id": 3,
+      "id": 4,
       "question": "Why can't I select my IBC token to pay the transaction fee?",
       "answer": "When you send something shielded, the transaction fee must be paid using a shielded token amount. Unshielded transactions (like staking or claiming rewards) must be paid using an unshielded token amount.",
       "images": [],
@@ -28,15 +44,15 @@
       "last_updated": "2025-05-26"
     },
     {
-      "id": 4,
+      "id": 5,
       "question": "How come my transaction keeps timing out and failing?",
-      "answer": "Maybe the default gas amount. Raise the Gas Amount from the default to something like 30,000. Note: if you ran out of NAM, it could be that your Gas Amount has been too high. Most transactions can be done for 30,000 gas or lower.",
+      "answer": "Maybe the default gas amount. Raise the Gas Amount from the default to something like 30,000.<br>Note: if you ran out of NAM, it could be that your Gas Amount has been too high. Most transactions can be done for 30,000 gas or lower.",
       "images": [],
       "tags": ["fees", "gas"],
       "last_updated": "2025-05-26"
     },
     {
-      "id": 5,
+      "id": 6,
       "question": "Why can't I see my shielded balances?",
       "answer": "Try this: Namadillo settings ⚙️ --> MASP --> Invalidate Shielded Context",
       "images": [],
@@ -44,9 +60,9 @@
       "last_updated": "2025-05-26"
     },
     {
-      "id": 6,
+      "id": 7,
       "question": "Why can't I get my Ledger device to work with Namada?",
-      "answer": "Try this: Namadillo settings ⚙️ --> Ledger --> Register ledger device. Note: Nano S is not supported for anything shielded! Nano S Plus, X, and the rest are supported.",
+      "answer": "Try this: Namadillo settings ⚙️ --> Ledger --> Register ledger device.<br>Note: Nano S is not supported for anything shielded! Nano S Plus, X, and the rest are supported.",
       "images": [],
       "tags": ["Ledger"],
       "last_updated": "2025-05-26"
