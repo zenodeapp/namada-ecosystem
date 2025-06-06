@@ -3,7 +3,7 @@
     {
       "id": 0,
       "question": "Why so many addresses!? What are they?",
-      "answer": "Your tnam (transparent address) is publicly known, so staking, voting, tnam to tnam transfers, and anything else done with it can be openly seen and potentially attributed to you. Only transfers can be shielded.<br>Your znam (shielded address) can be shared to receive payments. Transfers between znam only reveal transaction details to the sender/receiver involved. Sharing your “viewing key” lets anyone with the viewing key see these details.",
+      "answer": "Your tnam (transparent address) is publicly known, so staking, voting, tnam to tnam transfers, and anything else done with it can be openly seen and potentially attributed to you. Only transfers can be shielded.<br><br>Your znam (shielded address) can be shared to receive payments. Transfers between znam only reveal transaction details to the sender/receiver involved. Sharing your “viewing key” lets anyone with the viewing key see these details.",
       "images": [],
       "tags": ["address", "transparent", "shielded"],
       "last_updated": "2025-06-05"
@@ -11,7 +11,7 @@
     {
       "id": 1,
       "question": "What is a private key?",
-      "answer": "Your private key is usually represented as a 'seed phrase' or 'mnemonic phrase'. It's a list of 12 (or 24) words that give the holder complete control of your address. Lose this, and you will lose your funds irrevocably.<br>Using a hardware wallet device provides strong protection against this. <a href=\"https://namada.net/blog/namada-is-now-available-on-ledger\" target=\"_blank\">Namada supports Ledger hardware wallets</a> (with more to come!)",
+      "answer": "Your private key is usually represented as a 'seed phrase' or 'mnemonic phrase'. It's a list of 12 (or 24) words that give the holder complete control of your address. Lose this, and you will lose your funds irrevocably.<br><br>Using a hardware wallet device provides strong protection against this. <a href=\"https://namada.net/blog/namada-is-now-available-on-ledger\" target=\"_blank\">Namada supports Ledger hardware wallets</a> (with more to come!)",
       "images": [],
       "tags": ["seed", "private", "mnemonic", "phrase"],
       "last_updated": "2025-06-05"
@@ -27,7 +27,7 @@
     {
       "id": 3,
       "question": "I can't remember my Namada browser extension password, how can I reset it?",
-      "answer": "You can still access your wallet by performing a fresh installation of the Namada Keychain extension and re-importing your seed phrase.<br>To do so, follow these steps:<br>1. Make sure you have your seed phrase ready.<br>2. Uninstall the Keychain extension.<br>3. <a href=\"https://www.namada.help/tutorials/namada-keychain-extension-installation\" target=\"_blank\">Reinstall the extension</a>.<br>4. <a href=\"https://www.namada.help/tutorials/how-to-import-a-wallet\" target=\"_blank\">Re-import your wallet using your account's seed phrase</a>.",
+      "answer": "You can still access your wallet by performing a fresh installation of the Namada Keychain extension and re-importing your seed phrase.<br><br>To do so, follow these steps:<br>1. Make sure you have your seed phrase ready.<br>2. Uninstall the Keychain extension.<br>3. <a href=\"https://www.namada.help/tutorials/namada-keychain-extension-installation\" target=\"_blank\">Reinstall the extension</a>.<br>4. <a href=\"https://www.namada.help/tutorials/how-to-import-a-wallet\" target=\"_blank\">Re-import your wallet using your account's seed phrase</a>.",
       "images": [],
       "tags": ["password", "extension"],
       "last_updated": "2025-05-26"
@@ -54,7 +54,7 @@
     {
       "id": 6,
       "question": "How come my transaction keeps timing out and failing?",
-      "answer": "Maybe the default gas amount. Raise the Gas Amount from the default to something like 30,000.<br>Note: if you ran out of NAM, it could be that your Gas Amount has been too high. Most transactions can be done for 30,000 gas or lower.",
+      "answer": "Maybe the default gas amount. Raise the Gas Amount from the default to something like 30,000.<br><br>Note: if you ran out of NAM, it could be that your Gas Amount has been too high. Most transactions can be done for 30,000 gas or lower.",
       "images": [],
       "tags": ["fees", "gas"],
       "last_updated": "2025-05-26"
