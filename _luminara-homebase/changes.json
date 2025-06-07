@@ -38578,5 +38578,46 @@
                 "new_value": true
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-07T10:16:16.776557+00:00Z",
+        "changes": [
+            {
+                "team": "Sproutstake",
+                "service": "interface",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.Sproutstake.interface.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            },
+            {
+                "team": "Sproutstake",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.Sproutstake.interface.version",
+                "type": "modified",
+                "old_value": "1.21.0",
+                "new_value": "1.24.0"
+            },
+            {
+                "team": "Palamar",
+                "service": "interface",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.Palamar.interface.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            },
+            {
+                "team": "Palamar",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.Palamar.interface.version",
+                "type": "modified",
+                "old_value": "1.21.0",
+                "new_value": "1.24.0"
+            }
+        ]
     }
 ]
