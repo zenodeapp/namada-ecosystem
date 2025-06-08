@@ -40079,5 +40079,28 @@
                 "new_value": "1.24.0"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-08T20:16:20.288252+00:00Z",
+        "changes": [
+            {
+                "team": "Grand Valley",
+                "service": "interface",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.Grand Valley.interface.is_up_to_date",
+                "type": "modified",
+                "old_value": false,
+                "new_value": true
+            },
+            {
+                "team": "Grand Valley",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.Grand Valley.interface.version",
+                "type": "modified",
+                "old_value": "1.21.0",
+                "new_value": "1.24.0"
+            }
+        ]
     }
 ]
