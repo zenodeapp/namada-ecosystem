@@ -196,7 +196,7 @@ def get_service_data(service, url):
     return service_data
 
 # --- First pass: collect all data and block heights ---
-all_block_heights = []
+network_block_heights = {}
 network_data = {}
 
 for network, sources in INTERFACES.items():
@@ -210,6 +210,7 @@ for network, sources in INTERFACES.items():
         continue
     network_interfaces = []
     config_ref = HEALTH_CONFIG.get(network, {})
+    block_heights = []
     for interface in interfaces:
         if "Namadillo" not in interface.get("Interface Name (Namadillo or Custom)", ""):
             continue
@@ -224,7 +225,7 @@ for network, sources in INTERFACES.items():
             try:
                 height = int(s.get("latest_block_height", 0))
                 if height > 0:
-                    all_block_heights.append(height)
+                    block_heights.append(height)
             except Exception:
                 pass
         interface_version = get_interface_version(interface_url)
@@ -240,15 +241,18 @@ for network, sources in INTERFACES.items():
         }
         network_interfaces.append(interface_entry)
     network_data[network] = network_interfaces
+    network_block_heights[network] = max(block_heights) if block_heights else 0
 
-# --- Calculate reference_latest_block_height ---
-reference_latest_block_height = max(all_block_heights) if all_block_heights else 0
+# --- Calculate reference_latest_block_height for each network ---
+reference_latest_block_height = network_block_heights.get("namada", 0)
+housefire_reference_latest_block_height = network_block_heights.get("housefire", 0)
 
-# --- Second pass: assign sync_state and is_up_to_date using the reference height ---
+# --- Second pass: assign sync_state and is_up_to_date using the correct reference height ---
 output_data = {
     "script_start_time": START_TIME,
     "script_end_time": "",
     "reference_latest_block_height": str(reference_latest_block_height),
+    "housefire_reference_latest_block_height": str(housefire_reference_latest_block_height),
     "required_versions": {
         "interface": HEALTH_CONFIG.get("namada", {}).get("interface", {}).get("required_version", "n/a"),
         "indexer": HEALTH_CONFIG.get("namada", {}).get("services", {}).get("indexer", {}).get("required_version", "n/a"),
@@ -260,6 +264,7 @@ output_data = {
 
 for network, interfaces in network_data.items():
     config_ref = HEALTH_CONFIG.get(network, {})
+    ref_block = network_block_heights.get(network, 0)
     for interface in interfaces:
         for s in interface["settings"]:
             try:
@@ -267,7 +272,7 @@ for network, interfaces in network_data.items():
             except Exception:
                 height = 0
             service_conf = config_ref.get("services", {}).get(s["service"], {})
-            s["sync_state"] = determine_sync_state(height, reference_latest_block_height, service_conf)
+            s["sync_state"] = determine_sync_state(height, ref_block, service_conf)
             s["is_up_to_date"] = compare_versions(s.get("version", "n/a"), service_conf.get("required_version", "n/a"))
         # Sort settings by service type
         interface["settings"] = sorted(interface["settings"], key=lambda x: x["service"])
