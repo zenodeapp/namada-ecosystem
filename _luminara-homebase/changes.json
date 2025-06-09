@@ -40292,5 +40292,33 @@
                 "new_value": "sync_ok"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-09T09:42:08.256692+00:00Z",
+        "changes": [
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_required_versions",
+                "full_path": "housefire_required_versions",
+                "type": "added",
+                "old_value": null,
+                "new_value": {
+                    "interface": "1.24.0",
+                    "indexer": "3.0.2",
+                    "rpc": "0.37.15",
+                    "masp": "1.3.0"
+                }
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "added",
+                "old_value": null,
+                "new_value": "1904727"
+            }
+        ]
     }
 ]
