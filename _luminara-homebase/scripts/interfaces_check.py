@@ -229,6 +229,7 @@ for network, sources in INTERFACES.items():
             except Exception:
                 pass
         interface_version = get_interface_version(interface_url)
+        # Use the correct required version for each network
         interface_required_version = config_ref.get("interface", {}).get("required_version", "n/a")
         interface_entry = {
             "team": interface.get("Team or Contributor Name", "Unknown"),
@@ -259,6 +260,12 @@ output_data = {
         "rpc": HEALTH_CONFIG.get("namada", {}).get("services", {}).get("rpc", {}).get("required_version", "n/a"),
         "masp": HEALTH_CONFIG.get("namada", {}).get("services", {}).get("masp", {}).get("required_version", "n/a")
     },
+    "housefire_required_versions": {
+        "interface": HEALTH_CONFIG.get("housefire", {}).get("interface", {}).get("required_version", "n/a"),
+        "indexer": HEALTH_CONFIG.get("housefire", {}).get("services", {}).get("indexer", {}).get("required_version", "n/a"),
+        "rpc": HEALTH_CONFIG.get("housefire", {}).get("services", {}).get("rpc", {}).get("required_version", "n/a"),
+        "masp": HEALTH_CONFIG.get("housefire", {}).get("services", {}).get("masp", {}).get("required_version", "n/a")
+    },
     "networks": []
 }
 
@@ -271,10 +278,10 @@ for network, interfaces in network_data.items():
                 height = int(s.get("latest_block_height", 0))
             except Exception:
                 height = 0
+            # Use the correct required version for each network/service
             service_conf = config_ref.get("services", {}).get(s["service"], {})
             s["sync_state"] = determine_sync_state(height, ref_block, service_conf)
             s["is_up_to_date"] = compare_versions(s.get("version", "n/a"), service_conf.get("required_version", "n/a"))
-        # Sort settings by service type
         interface["settings"] = sorted(interface["settings"], key=lambda x: x["service"])
     output_data["networks"].append({"network": network, "interface": interfaces})
 
