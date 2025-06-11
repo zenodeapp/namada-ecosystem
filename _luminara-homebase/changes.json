@@ -42941,5 +42941,28 @@
                 "new_value": "1924630"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-11T08:21:53.658258+00:00Z",
+        "changes": [
+            {
+                "team": "shield-crypto",
+                "service": "indexer",
+                "field": "sync_state",
+                "full_path": "namada.operator.shield-crypto.service.indexer.sync_state",
+                "type": "modified",
+                "old_value": "sync_lag",
+                "new_value": "sync_nok"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "1924630",
+                "new_value": "1925088"
+            }
+        ]
     }
 ]
