@@ -43061,5 +43061,46 @@
                 "new_value": "1927143"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-11T14:15:32.545582+00:00Z",
+        "changes": [
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "1927143",
+                "new_value": "1927608"
+            },
+            {
+                "team": "max-02",
+                "service": "rpc",
+                "field": "url",
+                "full_path": "namada.operator.max-02.service.rpc.url",
+                "type": "modified",
+                "old_value": "https://rpc.namada.tududes.com:443",
+                "new_value": "https://rpc-namada.5elementsnodes.com"
+            },
+            {
+                "team": "max-02",
+                "service": "masp",
+                "field": "url",
+                "full_path": "namada.operator.max-02.service.masp.url",
+                "type": "modified",
+                "old_value": "https://masp.namada.tududes.com:443",
+                "new_value": "https://masp2-namada.5elementsnodes.com"
+            },
+            {
+                "team": "max-02",
+                "service": "indexer",
+                "field": "url",
+                "full_path": "namada.operator.max-02.service.indexer.url",
+                "type": "modified",
+                "old_value": "https://indexer.namada.tududes.com:443",
+                "new_value": "https://index2-namada.5elementsnodes.com"
+            }
+        ]
     }
 ]
