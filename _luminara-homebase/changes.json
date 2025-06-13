@@ -46594,5 +46594,55 @@
                 "new_value": true
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-13T19:12:57.333520+00:00Z",
+        "changes": [
+            {
+                "team": "Validatus",
+                "service": "indexer",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Validatus.service.indexer.latest_block_height",
+                "type": "modified",
+                "old_value": "2390054",
+                "new_value": "0"
+            },
+            {
+                "team": "Validatus",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.Validatus.service.indexer.version",
+                "type": "modified",
+                "old_value": "3.0.2",
+                "new_value": "n/a"
+            },
+            {
+                "team": "Validatus",
+                "service": "indexer",
+                "field": "sync_state",
+                "full_path": "namada.operator.Validatus.service.indexer.sync_state",
+                "type": "modified",
+                "old_value": "sync_ok",
+                "new_value": "sync_nok"
+            },
+            {
+                "team": "Validatus",
+                "service": "indexer",
+                "field": "status",
+                "full_path": "namada.operator.Validatus.service.indexer.status",
+                "type": "modified",
+                "old_value": "up",
+                "new_value": "down"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "1949777",
+                "new_value": "1950148"
+            }
+        ]
     }
 ]
