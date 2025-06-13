@@ -18,14 +18,22 @@
     },
     {
       "id": 2,
-      "question": "How do I get or send NAM tokens?",
-      "answer": "You can transfer any supported IBC token, but you can't get or send NAM tokens until a governance proposal enables transfers (this will be Phase 5).",
+      "question": "How do I get $NAM tokens?",
+      "answer": "$NAM is not currently available for purchase on the market (this will become possible after the activation of Phase 5 IBC transfers).<br>However, internal transfers are enabled, so someone who owns $NAM can send it to your Namada wallet.<br>Being helpful on our Discord may also earn you $NAM rewards.",
       "images": [],
-      "tags": ["NAM", "transfers", "trading"],
+      "tags": ["NAM", "buy", "trading"],
       "last_updated": "2025-05-26"
     },
     {
       "id": 3,
+      "question": "How can I send or transfer $NAM tokens to another wallet?",
+      "answer": "Currently, $NAM can only be sent from and to Namada wallets.<br><br>To do so, follow these steps:<br>1 - <a href="https://www.namadillo.app/" target="_blank">Connect your wallet to Namadillo</a><br>2 - Click on the "Transfer" tab available in the left sidebar.<br>3 - Select the address you want to send $NAM from (Shielded or Transparent address).<br>4 - Select the $NAM token and enter the amount.<br>5 - Enter your recipient's address and click on the "Submit" button.<br>6 - Sign the transaction and wait for confirmation.",
+      "images": [],
+      "tags": ["NAM", "transfer"],
+      "last_updated": "2025-05-26"
+    },
+    {
+      "id": 4,
       "question": "I can't remember my Namada browser extension password, how can I reset it?",
       "answer": "You can still access your wallet by performing a fresh installation of the Namada Keychain extension and re-importing your seed phrase.<br><br>To do so, follow these steps:<br>1. Make sure you have your seed phrase ready.<br>2. Uninstall the Keychain extension.<br>3. <a href=\"https://www.namada.help/tutorials/namada-keychain-extension-installation\" target=\"_blank\">Reinstall the extension</a>.<br>4. <a href=\"https://www.namada.help/tutorials/how-to-import-a-wallet\" target=\"_blank\">Re-import your wallet using your account's seed phrase</a>.",
       "images": [],
@@ -33,7 +41,7 @@
       "last_updated": "2025-05-26"
     },
     {
-      "id": 4,
+      "id": 5,
       "question": "How can I pay for transaction fees if I can't get NAM?",
       "answer": "Any IBC token supported by Namada can be used to pay transaction fees. Look for Fee Options (ɪɴ sᴍᴀʟʟ ꜰᴏɴᴛ) and click NAM (or ATOM, etc).",
       "images": [
@@ -44,7 +52,7 @@
       "last_updated": "2025-05-26"
     },
     {
-      "id": 5,
+      "id": 6,
       "question": "Why can't I select my IBC token to pay the transaction fee?",
       "answer": "When you send something shielded, the transaction fee must be paid using a shielded token amount. Unshielded transactions (like staking or claiming rewards) must be paid using an unshielded token amount.",
       "images": [],
@@ -52,7 +60,7 @@
       "last_updated": "2025-05-26"
     },
     {
-      "id": 6,
+      "id": 7,
       "question": "How come my transaction keeps timing out and failing?",
       "answer": "Maybe the default gas amount. Raise the Gas Amount from the default to something like 30,000.<br><br>Note: if you ran out of NAM, it could be that your Gas Amount has been too high. Most transactions can be done for 30,000 gas or lower.",
       "images": [],
@@ -60,7 +68,7 @@
       "last_updated": "2025-05-26"
     },
     {
-      "id": 7,
+      "id": 8,
       "question": "Why can't I see my shielded balances?",
       "answer": "Try this: Namadillo settings ⚙️ --> MASP --> Invalidate Shielded Context",
       "images": [],
@@ -68,7 +76,7 @@
       "last_updated": "2025-05-26"
     },
     {
-      "id": 8,
+      "id": 9,
       "question": "Why can't I get my Ledger device to work with Namada?",
       "answer": "Try this: Namadillo settings ⚙️ --> Ledger --> Register ledger device.<br>Note: Nano S is not supported for anything shielded! Nano S Plus, X, and the rest are supported.",
       "images": [],
