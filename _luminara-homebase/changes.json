@@ -53134,5 +53134,55 @@
                 "new_value": "1980939"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-16T20:17:58.528887+00:00Z",
+        "changes": [
+            {
+                "team": "shield-crypto",
+                "service": "indexer",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.shield-crypto.service.indexer.latest_block_height",
+                "type": "modified",
+                "old_value": "2426980",
+                "new_value": "2428718"
+            },
+            {
+                "team": "shield-crypto",
+                "service": "indexer",
+                "field": "sync_state",
+                "full_path": "namada.operator.shield-crypto.service.indexer.sync_state",
+                "type": "modified",
+                "old_value": "sync_nok",
+                "new_value": "sync_ok"
+            },
+            {
+                "team": "Grand Valley",
+                "service": "indexer",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Grand Valley.service.indexer.latest_block_height",
+                "type": "modified",
+                "old_value": "2427262",
+                "new_value": "2428721"
+            },
+            {
+                "team": "Grand Valley",
+                "service": "indexer",
+                "field": "sync_state",
+                "full_path": "namada.operator.Grand Valley.service.indexer.sync_state",
+                "type": "modified",
+                "old_value": "sync_nok",
+                "new_value": "sync_ok"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "1980939",
+                "new_value": "1981405"
+            }
+        ]
     }
 ]
