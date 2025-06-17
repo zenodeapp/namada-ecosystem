@@ -54630,5 +54630,37 @@
                 "new_value": "1992219"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-17T22:42:18.743417+00:00Z",
+        "changes": [
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "1992219",
+                "new_value": "1992454"
+            },
+            {
+                "team": "shield-crypto",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.shield-crypto.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "2441761",
+                "new_value": "2442294"
+            },
+            {
+                "team": "shield-crypto",
+                "service": "rpc",
+                "field": "sync_state",
+                "full_path": "namada.operator.shield-crypto.service.rpc.sync_state",
+                "type": "modified",
+                "old_value": "sync_nok",
+                "new_value": "sync_ok"
+            }
+        ]
     }
 ]
