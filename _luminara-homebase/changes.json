@@ -65884,5 +65884,28 @@
                 "new_value": "2022130"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-20T21:12:43.796586+00:00Z",
+        "changes": [
+            {
+                "team": "shield-crypto",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.shield-crypto.interface.version",
+                "type": "modified",
+                "old_value": "1.27.0",
+                "new_value": "1.28.0"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2022130",
+                "new_value": "2022257"
+            }
+        ]
     }
 ]
