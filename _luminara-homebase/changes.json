@@ -65990,5 +65990,37 @@
                 "new_value": "2023117"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-20T23:38:34.058800+00:00Z",
+        "changes": [
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2023117",
+                "new_value": "2023320"
+            },
+            {
+                "team": "5ElementsNodes",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.5ElementsNodes.interface.version",
+                "type": "modified",
+                "old_value": "1.28.1",
+                "new_value": "1.28.2"
+            },
+            {
+                "team": "Heliax",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.Heliax.interface.version",
+                "type": "modified",
+                "old_value": "1.28.1",
+                "new_value": "1.28.2"
+            }
+        ]
     }
 ]
