@@ -69015,5 +69015,82 @@
                 "new_value": "up"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-23T18:23:05.196740+00:00Z",
+        "changes": [
+            {
+                "team": "OriginStake",
+                "service": "indexer",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.OriginStake.service.indexer.is_up_to_date",
+                "type": "modified",
+                "old_value": true,
+                "new_value": false
+            },
+            {
+                "team": "OriginStake",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.OriginStake.service.indexer.version",
+                "type": "modified",
+                "old_value": "3.2.0",
+                "new_value": "3.3.0"
+            },
+            {
+                "team": "MekongLabs",
+                "service": "indexer",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.MekongLabs.service.indexer.is_up_to_date",
+                "type": "modified",
+                "old_value": true,
+                "new_value": false
+            },
+            {
+                "team": "MekongLabs",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.MekongLabs.service.indexer.version",
+                "type": "modified",
+                "old_value": "3.2.0",
+                "new_value": "3.3.0"
+            },
+            {
+                "team": "TuDudes",
+                "service": "indexer",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.TuDudes.service.indexer.is_up_to_date",
+                "type": "modified",
+                "old_value": true,
+                "new_value": false
+            },
+            {
+                "team": "TuDudes",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.TuDudes.service.indexer.version",
+                "type": "modified",
+                "old_value": "3.2.0",
+                "new_value": "3.3.0"
+            },
+            {
+                "team": "Hadesguard",
+                "service": "indexer",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.Hadesguard.service.indexer.is_up_to_date",
+                "type": "modified",
+                "old_value": true,
+                "new_value": false
+            },
+            {
+                "team": "Hadesguard",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.Hadesguard.service.indexer.version",
+                "type": "modified",
+                "old_value": "3.2.0",
+                "new_value": "3.3.0"
+            }
+        ]
     }
 ]
