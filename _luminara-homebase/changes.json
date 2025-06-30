@@ -75357,5 +75357,37 @@
                 "new_value": "2082071"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-30T06:51:33.414062+00:00Z",
+        "changes": [
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2082071",
+                "new_value": "2082416"
+            },
+            {
+                "team": "Validatus",
+                "service": "interface",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.Validatus.interface.is_up_to_date",
+                "type": "modified",
+                "old_value": true,
+                "new_value": false
+            },
+            {
+                "team": "Validatus",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.Validatus.interface.version",
+                "type": "modified",
+                "old_value": "1.28.2",
+                "new_value": "1.28.3"
+            }
+        ]
     }
 ]
