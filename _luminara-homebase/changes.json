@@ -75311,5 +75311,37 @@
                 "new_value": "2081560"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-30T05:43:48.889451+00:00Z",
+        "changes": [
+            {
+                "team": "itrocket",
+                "service": "interface",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.itrocket.interface.is_up_to_date",
+                "type": "modified",
+                "old_value": true,
+                "new_value": false
+            },
+            {
+                "team": "itrocket",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.itrocket.interface.version",
+                "type": "modified",
+                "old_value": "1.28.2",
+                "new_value": "1.28.3"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2081560",
+                "new_value": "2081921"
+            }
+        ]
     }
 ]
