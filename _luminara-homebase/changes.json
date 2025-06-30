@@ -75233,5 +75233,55 @@
                 "new_value": "2079456"
             }
         ]
+    },
+    {
+        "timestamp": "2025-06-30T03:09:53.698661+00:00Z",
+        "changes": [
+            {
+                "team": "TuDudes",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.TuDudes.interface.version",
+                "type": "modified",
+                "old_value": "1.28.2",
+                "new_value": "1.28.3"
+            },
+            {
+                "team": "TuDudes",
+                "service": "interface",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.TuDudes.interface.is_up_to_date",
+                "type": "modified",
+                "old_value": true,
+                "new_value": false
+            },
+            {
+                "team": "Hadesguard",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.Hadesguard.interface.version",
+                "type": "modified",
+                "old_value": "1.28.2",
+                "new_value": "1.28.3"
+            },
+            {
+                "team": "Hadesguard",
+                "service": "interface",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.Hadesguard.interface.is_up_to_date",
+                "type": "modified",
+                "old_value": true,
+                "new_value": false
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2079456",
+                "new_value": "2080476"
+            }
+        ]
     }
 ]
