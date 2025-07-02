@@ -78729,5 +78729,37 @@
                 "new_value": "2100847"
             }
         ]
+    },
+    {
+        "timestamp": "2025-07-02T04:02:06.430149+00:00Z",
+        "changes": [
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2100847",
+                "new_value": "2101444"
+            },
+            {
+                "team": "Stake&Relax \ud83e\udda5",
+                "service": "interface",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.Stake&Relax \ud83e\udda5.interface.is_up_to_date",
+                "type": "modified",
+                "old_value": true,
+                "new_value": false
+            },
+            {
+                "team": "Stake&Relax \ud83e\udda5",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.Stake&Relax \ud83e\udda5.interface.version",
+                "type": "modified",
+                "old_value": "1.28.2",
+                "new_value": "1.28.3"
+            }
+        ]
     }
 ]
