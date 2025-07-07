@@ -82895,5 +82895,37 @@
                 "new_value": "2160487"
             }
         ]
+    },
+    {
+        "timestamp": "2025-07-07T21:37:30.562469+00:00Z",
+        "changes": [
+            {
+                "team": "Grand Valley",
+                "service": "rpc",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Grand Valley.service.rpc.latest_block_height",
+                "type": "modified",
+                "old_value": "2690033",
+                "new_value": "2690495"
+            },
+            {
+                "team": "Grand Valley",
+                "service": "rpc",
+                "field": "sync_state",
+                "full_path": "namada.operator.Grand Valley.service.rpc.sync_state",
+                "type": "modified",
+                "old_value": "sync_nok",
+                "new_value": "sync_ok"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2160487",
+                "new_value": "2160751"
+            }
+        ]
     }
 ]
