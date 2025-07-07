@@ -82418,5 +82418,28 @@
                 "new_value": "2155768"
             }
         ]
+    },
+    {
+        "timestamp": "2025-07-07T10:45:28.012686+00:00Z",
+        "changes": [
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2155768",
+                "new_value": "2156051"
+            },
+            {
+                "team": "itrocket",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.itrocket.interface.version",
+                "type": "modified",
+                "old_value": "1.28.3",
+                "new_value": "1.29.0"
+            }
+        ]
     }
 ]
