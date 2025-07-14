@@ -91031,5 +91031,55 @@
                 "new_value": "2230895"
             }
         ]
+    },
+    {
+        "timestamp": "2025-07-14T18:53:14.607124+00:00Z",
+        "changes": [
+            {
+                "team": "MELLIFERA",
+                "service": "indexer",
+                "field": "sync_state",
+                "full_path": "namada.operator.MELLIFERA.service.indexer.sync_state",
+                "type": "modified",
+                "old_value": "sync_ok",
+                "new_value": "sync_nok"
+            },
+            {
+                "team": "MELLIFERA",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.MELLIFERA.service.indexer.version",
+                "type": "modified",
+                "old_value": "3.2.0",
+                "new_value": "3.3.2"
+            },
+            {
+                "team": "MELLIFERA",
+                "service": "indexer",
+                "field": "is_up_to_date",
+                "full_path": "namada.operator.MELLIFERA.service.indexer.is_up_to_date",
+                "type": "modified",
+                "old_value": true,
+                "new_value": false
+            },
+            {
+                "team": "MELLIFERA",
+                "service": "indexer",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.MELLIFERA.service.indexer.latest_block_height",
+                "type": "modified",
+                "old_value": "2775410",
+                "new_value": "2775675"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2230895",
+                "new_value": "2231263"
+            }
+        ]
     }
 ]
