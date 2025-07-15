@@ -91745,5 +91745,37 @@
                 "new_value": "1.29.0"
             }
         ]
+    },
+    {
+        "timestamp": "2025-07-15T06:22:59.174852+00:00Z",
+        "changes": [
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2235939",
+                "new_value": "2236132"
+            },
+            {
+                "team": "OriginStake",
+                "service": "interface",
+                "field": "status",
+                "full_path": "namada.operator.OriginStake.interface.status",
+                "type": "modified",
+                "old_value": "up",
+                "new_value": "down"
+            },
+            {
+                "team": "OriginStake",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.OriginStake.interface.version",
+                "type": "modified",
+                "old_value": "1.29.0",
+                "new_value": "n/a"
+            }
+        ]
     }
 ]
