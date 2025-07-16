@@ -94455,5 +94455,82 @@
                 "new_value": "2250394"
             }
         ]
+    },
+    {
+        "timestamp": "2025-07-16T15:16:32.204949+00:00Z",
+        "changes": [
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2250394",
+                "new_value": "2250574"
+            },
+            {
+                "team": "shield-crypto",
+                "service": "indexer",
+                "field": "status",
+                "full_path": "namada.operator.shield-crypto.service.indexer.status",
+                "type": "modified",
+                "old_value": "up",
+                "new_value": "down"
+            },
+            {
+                "team": "shield-crypto",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.shield-crypto.service.indexer.version",
+                "type": "modified",
+                "old_value": "3.3.3",
+                "new_value": "n/a"
+            },
+            {
+                "team": "Hadesguard",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.Hadesguard.interface.version",
+                "type": "modified",
+                "old_value": "1.28.3",
+                "new_value": "1.31.0"
+            },
+            {
+                "team": "itrocket",
+                "service": "indexer",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.itrocket.service.indexer.latest_block_height",
+                "type": "modified",
+                "old_value": "2782644",
+                "new_value": "2798612"
+            },
+            {
+                "team": "itrocket",
+                "service": "indexer",
+                "field": "sync_state",
+                "full_path": "namada.operator.itrocket.service.indexer.sync_state",
+                "type": "modified",
+                "old_value": "sync_nok",
+                "new_value": "sync_ok"
+            },
+            {
+                "team": "itrocket",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.itrocket.service.indexer.version",
+                "type": "modified",
+                "old_value": "3.3.2",
+                "new_value": "3.3.4"
+            },
+            {
+                "team": "itrocket",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.itrocket.interface.version",
+                "type": "modified",
+                "old_value": "1.29.0",
+                "new_value": "1.31.0"
+            }
+        ]
     }
 ]
