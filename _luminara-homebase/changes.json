@@ -97114,5 +97114,28 @@
                 "new_value": "2263256"
             }
         ]
+    },
+    {
+        "timestamp": "2025-07-17T20:42:43.910725+00:00Z",
+        "changes": [
+            {
+                "team": "StakeUp",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.StakeUp.interface.version",
+                "type": "modified",
+                "old_value": "1.31.0",
+                "new_value": "1.31.1"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2263256",
+                "new_value": "2263596"
+            }
+        ]
     }
 ]
