@@ -96893,5 +96893,28 @@
                 "new_value": "2260583"
             }
         ]
+    },
+    {
+        "timestamp": "2025-07-17T14:45:01.678718+00:00Z",
+        "changes": [
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2260583",
+                "new_value": "2260913"
+            },
+            {
+                "team": "CroutonDigital",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.CroutonDigital.interface.version",
+                "type": "modified",
+                "old_value": "1.29.0",
+                "new_value": "1.31.1"
+            }
+        ]
     }
 ]
