@@ -100982,5 +100982,55 @@
                 "new_value": "2305494"
             }
         ]
+    },
+    {
+        "timestamp": "2025-07-21T21:14:13.960257+00:00Z",
+        "changes": [
+            {
+                "team": "Nodes.Guru",
+                "service": "indexer",
+                "field": "latest_block_height",
+                "full_path": "namada.operator.Nodes.Guru.service.indexer.latest_block_height",
+                "type": "modified",
+                "old_value": "0",
+                "new_value": "2863549"
+            },
+            {
+                "team": "Nodes.Guru",
+                "service": "indexer",
+                "field": "sync_state",
+                "full_path": "namada.operator.Nodes.Guru.service.indexer.sync_state",
+                "type": "modified",
+                "old_value": "sync_nok",
+                "new_value": "sync_ok"
+            },
+            {
+                "team": "Nodes.Guru",
+                "service": "indexer",
+                "field": "version",
+                "full_path": "namada.operator.Nodes.Guru.service.indexer.version",
+                "type": "modified",
+                "old_value": "n/a",
+                "new_value": "3.3.4"
+            },
+            {
+                "team": "Nodes.Guru",
+                "service": "indexer",
+                "field": "status",
+                "full_path": "namada.operator.Nodes.Guru.service.indexer.status",
+                "type": "modified",
+                "old_value": "down",
+                "new_value": "up"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2305494",
+                "new_value": "2305648"
+            }
+        ]
     }
 ]
