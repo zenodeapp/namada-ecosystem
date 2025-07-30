@@ -108870,5 +108870,28 @@
                 "new_value": "2373688"
             }
         ]
+    },
+    {
+        "timestamp": "2025-07-30T07:44:45.203135+00:00Z",
+        "changes": [
+            {
+                "team": "CroutonDigital",
+                "service": "interface",
+                "field": "version",
+                "full_path": "namada.operator.CroutonDigital.interface.version",
+                "type": "modified",
+                "old_value": "1.31.1",
+                "new_value": "1.31.2"
+            },
+            {
+                "team": null,
+                "service": null,
+                "field": "housefire_reference_latest_block_height",
+                "full_path": "housefire_reference_latest_block_height",
+                "type": "modified",
+                "old_value": "2373688",
+                "new_value": "2374024"
+            }
+        ]
     }
 ]
